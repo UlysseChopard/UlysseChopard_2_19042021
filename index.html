@@ -26,41 +26,43 @@
 				
 				<nav class="menu">
 					<ul class="sans-point" id="menu">
-						<li><a href="#resultats_recherche">Hébergements</a></li>
+						<li><a href="#hebergements">Hébergements</a></li>
 						<li><a href="#activites">Activités</a></li>
 						<li><a href="#">S'inscrire</a></li>
 					</ul>
 				</nav>
 			</header>
 			
-			<section >
-				<label class="recherche">
+			<section class="recherche">
+				<label>
 					<span class="fas fa-map-marker-alt"></span>
 					<input type="search" name="q" aria-label="Recherchez votre hébergement">
 					<button>Recherche</button>
 				</label>
 			</section>
 			
-			<section class="hebergements" id="resultats_recherche">
-				<h2>Hébergements à Marseille</h2>
-				<nav><!-- ici les vignettes d'hébergements proposés --></nav>
-			</section>
-			
-			<section class="hebergements" id="populaires">
-				<h2>Les plus populaires</h2>
-				<nav>
-					<ul class="sans-point">
-						<li><a href="#">Hotel Le soleil du matin</a></li>
-						<li><a href="#">Au coeur de l'eau Chambres d'hôtes</a></li>
-						<li><a href="#">Hôtel Tout bleu et Blanc</a></li>
-					</ul>
-				</nav>
+			<section class="hebergements" id="hebergements">
+				<div class="resultats">
+					<h2>Hébergements à Marseille</h2>
+					<nav><!-- ici les vignettes d'hébergements proposés --></nav>
+				</div>
+				
+				<aside class="promotion">
+					<h2>Les plus populaires</h2>
+					<nav>
+						<ul>
+							<li><a href="#">Hotel Le soleil du matin</a></li>
+							<li><a href="#">Au coeur de l'eau Chambres d'hôtes</a></li>
+							<li><a href="#">Hôtel Tout bleu et Blanc</a></li>
+						</ul>
+					</nav>
+				</aside>
 			</section>
 			
 			<footer class="activites" id="activites">
 				<h2>Activités à Marseille</h2>
 				<nav>
-					<ul class="sans-point">
+					<ul>
 						<li><a href="#">Vieux Port</a></li>
 						<li><a href="#">Fort de pomègues</a></li>
 						<li><a href="#">Îles du Frioul</a></li>

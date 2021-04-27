@@ -1,36 +1,53 @@
 html, body {
 	font-family: "Raleway", "Open-sans", sans-serif;
+	padding: 0 3% 0 3%;
 }
 
+/* Mise en page de tous les elements */
 .page {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	height: 100vh;
+	flex-direction: row;
 }
 
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: space-around;
-}
-
-.titre {
-	align-self: flex-start;
-}
-
-.menu, #menu{
-	display: flex;
-	align-self: flex-end;
-	flex-direction: row;
+ 	display: flex;
 	justify-content: space-between;
-	align-items: space-between;
-	padding: 2px;
+}
+
+.recherche {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.hebergements {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Mise en place à l'intérieur des elements */
+
+/* Titre */
+.titre p {
+	font-style: italic;
+}
+
+/* Menu */
+#menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+ul li {
+	display: flex;
+	justify-content: space-between;
+	padding: 1px;
 	margin: 1px;
 }
 
-.sans-point {
-	list-style-type: none;
+/* Hebergements */
+
+/* Activités */
+.activites ul {
+	display: flex;
+	justify-content: space-between;
 }
