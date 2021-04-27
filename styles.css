@@ -1,57 +1,36 @@
-html, body, #bloc_page {
-	height: 100vh;
-	display: flex;
+html, body {
 	font-family: "Raleway", "Open-sans", sans-serif;
-	flex-direction: row;
-	flex-wrap: wrap;
 }
 
-header, #titre_principal {
-	flex-direction: row;
-}
-
-#menu_principal {
+.page {
 	display: flex;
-	flex-direction: row;
-	align-self: flex-end;
-	align-items: flex-end;	
-	list-style-type: none;
-}
-
-
-#activites {
-	display: flex;
-}
-
-#recherche_hebergements {
-	display: flex;
-	align-self: center;
-	align-items: flex-start;
+	flex-direction: column;
 	justify-content: flex-start;
+	align-items: center;
+	height: 100vh;
 }
 
-/* Oui */
-ul li {
+header {
 	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.titre {
+	align-self: flex-start;
+}
+
+.menu, #menu{
+	display: flex;
+	align-self: flex-end;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: space-between;
 	padding: 2px;
-	margin: 2px;
+	margin: 1px;
 }
 
-
-h1 {
-	display: flex;
-	margin: 0;
-	padding: 20px 0;
-    color: #00539F;
-	text-shadow: 3px 3px 4	px black;
-}
-
-/* Oui */
-input {
-    margin: .4rem 0;
-}
-
-/* Oui */
-button:hover {
-	background-color: grey;
+.sans-point {
+	list-style-type: none;
 }

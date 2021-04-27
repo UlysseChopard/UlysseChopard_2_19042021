@@ -16,41 +16,40 @@
 	</head>
 
 	<body>
-		<div id="bloc_page">
-		
+		<div id="page">
 			<header>
-				<div id="titre_principal">
+				<div class="titre">
 					<h1>Reservia</h1>
 					<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
 					<p>En plein centre-ville ou en pleine nature</p>
 				</div>
 				
-				<nav id="menu_principal">
-					<ul <!--id="menu_principal"-->>
-						<li><a href="#hebergements">Hébergements</a></li>
+				<nav class="menu">
+					<ul class="sans-point" id="menu">
+						<li><a href="#resultats_recherche">Hébergements</a></li>
 						<li><a href="#activites">Activités</a></li>
 						<li><a href="#">S'inscrire</a></li>
 					</ul>
 				</nav>
 			</header>
 			
-			<section id="recherche_hebergements">
-				<label>
+			<section >
+				<label class="recherche">
 					<span class="fas fa-map-marker-alt"></span>
-					<input type="search" id="recherche_hebergement" name="q" aria-label="Recherchez votre hébergement">
+					<input type="search" name="q" aria-label="Recherchez votre hébergement">
 					<button>Recherche</button>
 				</label>
 			</section>
 			
-			<section id="hebergements">
+			<section class="hebergements" id="resultats_recherche">
 				<h2>Hébergements à Marseille</h2>
 				<nav><!-- ici les vignettes d'hébergements proposés --></nav>
 			</section>
 			
-			<section id="hebergements_populaires">
+			<section class="hebergements" id="populaires">
 				<h2>Les plus populaires</h2>
 				<nav>
-					<ul>
+					<ul class="sans-point">
 						<li><a href="#">Hotel Le soleil du matin</a></li>
 						<li><a href="#">Au coeur de l'eau Chambres d'hôtes</a></li>
 						<li><a href="#">Hôtel Tout bleu et Blanc</a></li>
@@ -58,10 +57,10 @@
 				</nav>
 			</section>
 			
-			<footer id="activites">
+			<footer class="activites" id="activites">
 				<h2>Activités à Marseille</h2>
 				<nav>
-					<ul>
+					<ul class="sans-point">
 						<li><a href="#">Vieux Port</a></li>
 						<li><a href="#">Fort de pomègues</a></li>
 						<li><a href="#">Îles du Frioul</a></li>
@@ -71,7 +70,6 @@
 					</ul>
 				</nav>
 			</footer>
-			
 		</div>
 	</body>
 </html>
