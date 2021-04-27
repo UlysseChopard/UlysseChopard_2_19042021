@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	
+		
 		<title>Reservia</title>
+	
+		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		
 		<script src="https://kit.fontawesome.com/e33b8d6431.js" crossorigin="anonymous"></script>
-		<meta charset="utf-8"/>
 
 	</head>
 
@@ -21,24 +25,28 @@
 					<p>En plein centre-ville ou en pleine nature</p>
 				</div>
 				
-				<nav>
-					<ul>
-						<li><a href="#">Hébergements</a></li>
-						<li><a href="#">Activités</a></li>
+				<nav id="menu_principal">
+					<ul <!--id="menu_principal"-->>
+						<li><a href="#hebergements">Hébergements</a></li>
+						<li><a href="#activites">Activités</a></li>
 						<li><a href="#">S'inscrire</a></li>
 					</ul>
 				</nav>
 			</header>
 			
-			<section id="champ_recherche_hebergements">
-				<input type="search" id="recherche_hebergement" name="q" aria-label="Recherchez votre hébergement">
-				<button>Recherche</button>
-				<span id
+			<section id="recherche_hebergements">
+				<label>
+					<span class="fas fa-map-marker-alt"></span>
+					<input type="search" id="recherche_hebergement" name="q" aria-label="Recherchez votre hébergement">
+					<button>Recherche</button>
+				</label>
 			</section>
-			<section id="résultats_recherche">
+			
+			<section id="hebergements">
 				<h2>Hébergements à Marseille</h2>
 				<nav><!-- ici les vignettes d'hébergements proposés --></nav>
 			</section>
+			
 			<section id="hebergements_populaires">
 				<h2>Les plus populaires</h2>
 				<nav>
@@ -49,7 +57,8 @@
 					</ul>
 				</nav>
 			</section>
-			<footer id="activités">
+			
+			<footer id="activites">
 				<h2>Activités à Marseille</h2>
 				<nav>
 					<ul>
@@ -62,6 +71,7 @@
 					</ul>
 				</nav>
 			</footer>
+			
 		</div>
 	</body>
 </html>

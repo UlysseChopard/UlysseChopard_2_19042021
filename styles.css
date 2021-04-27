@@ -1,27 +1,57 @@
-.bloc_page {
-	font-family: 'Raleway', sans-serif;
+html, body, #bloc_page {
+	height: 100vh;
+	display: flex;
+	font-family: "Raleway", "Open-sans", sans-serif;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
+
+header, #titre_principal {
+	flex-direction: row;
+}
+
+#menu_principal {
+	display: flex;
+	flex-direction: row;
+	align-self: flex-end;
+	align-items: flex-end;	
+	list-style-type: none;
+}
+
+
+#activites {
+	display: flex;
+}
+
+#recherche_hebergements {
+	display: flex;
+	align-self: center;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+/* Oui */
+ul li {
+	display: flex;
+	padding: 2px;
+	margin: 2px;
+}
+
 
 h1 {
-    color: red;
+	display: flex;
+	margin: 0;
+	padding: 20px 0;
+    color: #00539F;
+	text-shadow: 3px 3px 4	px black;
 }
 
-h2 {
-	color: green;
-}
-
-p {
-	color: blue;
-}
-
+/* Oui */
 input {
     margin: .4rem 0;
 }
 
-nav {
-	display: flex;
-}
-
-section {
-	display: flex;
+/* Oui */
+button:hover {
+	background-color: grey;
 }
