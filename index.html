@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Reservia</title>
     <!--
@@ -7,6 +8,7 @@
 		<i class="fas fa-bed" id="bed"></i>
 		-->
     <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -16,82 +18,116 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <div class="titre">
-          <h1>Reservia</h1>
-        </div>
+  
+		<header>
+			
+			<h1>Reservia</h1>
+		
+			<nav class="menu">
+			  <ul>
+				<li><a href="#hebergements">Hébergements</a></li>
+				<li><a href="#activites">Activités</a></li>
+				<li><a href="#">S'inscrire</a></li>
+			  </ul>
+			</nav>
+		
+		</header>
+		
+		<main>
+		
+			<section class="recherche">
+			
+				<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+				<p>En plein centre-ville ou en pleine nature</p>
+				
+				<div class="champ-recherche">
+					<span class="fas fa-map-marker-alt"></span>
+					<input type="search" name="q" aria-label="Recherchez votre hébergement" />
+					<button>Recherche</button>
+				</div>
+				
+				<div class="filtres">
+					<h3>Filtres</h3>
+					<ul>
+						<li><a href="#">Economique</a></li>
+						<li><a href="#">Familial</a></li>
+						<li><a href="#">Romantique</a></li>
+						<li><a href="#">Animaux autorisés</a></li>
+					</ul>
+				</div>
+				
+				<p>Plus de 500 logements sont disponibles pour cette ville</p>
+				
+			</section>
 
-        <nav class="menu">
-          <ul class="sans-point" id="menu">
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#activites">Activités</a></li>
-            <li><a href="#">S'inscrire</a></li>
-          </ul>
-        </nav>
-      </header>
+			<section class="resultats">
+			
+				<div class="hebergements" id="hebergements">
+					<h2>Hébergements à Marseille</h2>
+					<ul>
+						<li><a href="#">Auberge la Canebière</a></li>
+						<li><a href="#">Hôtel du port</a></li>
+						<li><a href="#">Hôtel Les mouettes</a></li>
+						<li><a href="#">Hôtel de la mer</a></li>
+						<li><a href="#">Auberge Le panier</a></li>
+						<li><a href="#">Hôtel chez Amina</a></li>
+					</ul>
+				</div>
 
-      <section class="recherche">
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p>En plein centre-ville ou en pleine nature</p>
-        <span class="fas fa-map-marker-alt"></span>
-        <input type="search" name="q" aria-label="Recherchez votre hébergement" />
-        <button>Recherche</button>
-      </section>
+				<aside class="promotion">
+					<h2>Les plus populaires</h2>
+					<ul>
+						<li><a href="#">Hotel Le soleil du matin</a></li>
+						<li><a href="#">Au coeur de l'eau Chambres d'hôtes</a></li>
+						<li><a href="#">Hôtel Tout bleu et Blanc</a></li>
+					</ul>
+				</aside>
 
-	  <div class="resultats">
-      <section class="hebergements" id="hebergements">
-          <h2>Hébergements à Marseille</h2>
-          <!-- ici les vignettes d'hébergements proposés -->
-	</section>
-
-        <aside class="promotion">
-          <h2>Les plus populaires</h2>
-          <ul>
-            <li><a href="#">Hotel Le soleil du matin</a></li>
-            <li><a href="#">Au coeur de l'eau Chambres d'hôtes</a></li>
-            <li><a href="#">Hôtel Tout bleu et Blanc</a></li>
-          </ul>
-        </aside>
-
-		<section class="activites" id="activites">
-			<h2>Activités à Marseille</h2>
-			<ul>
-			<li><a href="#">Vieux Port</a></li>
-			<li><a href="#">Fort de pomègues</a></li>
-			<li><a href="#">Îles du Frioul</a></li>
-			<li><a href="#">Parc National des Calanques</a></li>
-			<li><a href="#">Notre-Dame de la Garde</a></li>
-			<li><a href="#">Parc Longchamp</a></li>
-			</ul>
-		</section>
-	</div>
+			</section>
+			
+			<section class="activites" id="activites">
+				<h2>Activités à Marseille</h2>
+				<ul>
+					<li><a href="#">Vieux Port</a></li>
+					<li><a href="#">Fort de pomègues</a></li>
+					<li><a href="#">Îles du Frioul</a></li>
+					<li><a href="#">Parc National des Calanques</a></li>
+					<li><a href="#">Notre-Dame de la Garde</a></li>
+					<li><a href="#">Parc Longchamp</a></li>
+				</ul>
+			</section>
+				
+		</main>
+		
+		<footer>
+	  
+			<section class="a-propos">
+				<h1>A propos</h1>
+				<ul>
+					<li><a href="#">Fonctionnement du site</a></li>
+					<li><a href="#">Conditions générales de vente</a></li>
+					<li><a href="#">Données et confidentialité</a></li>
+				</ul>
+			</section>
+			
+			<section class="a-propos">
+				<h1>Nos hébergements</h1>
+				<ul>
+					<li><a href="#">Charte qualité</a></li>
+					<li><a href="#">Soumettre votre hôtel</a></li>
+				</ul>
+			</section>
+			
+			<section class="a-propos">
+				<h1>Assistance</h1>
+				<ul>
+					<li><a href="#">Centre d'aide</a></li>
+					<li><a href="#">Nous contacter</a></li>
+				</ul>
+			</section>
+			
+		</footer>
+		
   </body>
-</main>
-  <footer>
-	<section class="a-propos">
-		<h1>A propos</h1>
-		<ul>
-			<li><a href="#">Fonctionnement du site</a></li>
-			<li><a href="#">Conditions générales de vente</a></li>
-			<li><a href="#">Données et confidentialité</a></li>
-		</ul>
-	</section>
-	
-	<section class="a-propos">
-		<h1>Nos hébergements</h1>
-		<ul>
-			<li><a href="#">Charte qualité</a></li>
-			<li><a href="#">Soumettre votre hôtel</a></li>
-		</ul>
-	</section>
-	
-	<section class="a-propos">
-		<h1>Assistance</h1>
-		<ul>
-			<li><a href="#">Centre d'aide</a></li>
-			<li><a href="#">Nous contacter</a></li>
-		</ul>
-	</section>
-</footer>
+
 </html>

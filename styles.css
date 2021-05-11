@@ -1,62 +1,152 @@
-/* Reset CSS */
+/* bleu : #0065FC
+ * bleu clair : #DEEBFF
+ * gris(fond) : #F2F2F2
+ */
+ 
+ /* Construction */
+/* header, main, footer {
+	border: 3px dashed red;
+}
+
+section, div, aside {
+	border: 2px dashed blue;
+}
+
 * {
-	padding: 0;
-	margin: 0;
+	border: 1px dashed black;
+} */
+
+/* Pour l'ensemble de la page */
+* {
+	box-sizing: border-box;
 }
 
-html, body {
-	font-family: "Raleway", "Open-sans", sans-serif;
+p {
+	font-style: italic;
 }
 
-a, a:visited, a:hover {
+a {
 	text-decoration: none;
 }
 
-/* Mise en page de tous les elements */
-.page {
+ul {
 	display: flex;
-	flex-direction: row;
+	flex: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
 }
 
+ul li {
+	margin: auto 10px;
+}
+
+body {
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	font-family: "Raleway", "Open-sans", sans-serif;
+	margin: 0 4%;
+}
+
+/* Header : Titre à gauche et menu de navigation à droite en ligne,
+ * alignés verticalement au centre
+ */
 header {
- 	display: flex;
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
 	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	flex: auto;
+	font-style: italic;
+	color: #0065FC;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.menu li:hover {
+	border-top: 2px solid #0065FC;
+}
+
+/* Main
+ */
+main {
+	display: flex;
+	flex-flow: column wrap;
 }
 
 .recherche {
 	display: flex;
-	justify-content: flex-start;
+	flex-flow: column wrap;
+	flex: auto;
+	margin-right: auto;
+}
+
+.champ-recherche {
+	flex-direction: row;
+}
+
+.champ-recherche span, input, button {
+	border: 1px solid black;
+}
+
+.filtres {
+	display: flex;
+	flex-flow: row wrap;
+	align-self: flex-start;
+}
+
+.filtres li {
+	border: 1px solid black;
+}
+
+.resultats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hebergements, .promotion {
+	background-color: #F2F2F2;
 }
 
 .hebergements {
 	display: flex;
-	justify-content: space-between;
+	flex-flow: column nowrap;
+	flex: 2 2 0;
 }
 
-/* Mise en place à l'intérieur des elements */
-
-/* Titre */
-.titre p {
-	font-style: italic;
+.hebergements ul {
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 1 1 0;
 }
 
-/* Menu */
-#menu {
+.promotion, .promotion ul {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
-ul li {
+/* Footer
+ */
+footer {
 	display: flex;
-	justify-content: space-between;
-	padding: 1px;
-	margin: 1px;
 }
 
-/* Hebergements */
+footer section {
+	flex: auto;
+}
 
-/* Activités */
-.activites ul {
+footer section ul {
 	display: flex;
-	justify-content: space-between;
+	flex-flow: column wrap;
 }
