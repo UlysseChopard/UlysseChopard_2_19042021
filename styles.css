@@ -1,3 +1,152 @@
-h1 {
-    color: red;
+/* bleu : #0065FC
+ * bleu clair : #DEEBFF
+ * gris(fond) : #F2F2F2
+ */
+ 
+ /* Construction */
+/* header, main, footer {
+	border: 3px dashed red;
+}
+
+section, div, aside {
+	border: 2px dashed blue;
+}
+
+* {
+	border: 1px dashed black;
+} */
+
+/* Pour l'ensemble de la page */
+* {
+	box-sizing: border-box;
+}
+
+p {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	flex: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+ul li {
+	margin: auto 10px;
+}
+
+body {
+	display: flex;
+	flex: auto;
+	flex-direction: column;
+	font-family: "Raleway", "Open-sans", sans-serif;
+	margin: 0 4%;
+}
+
+/* Header : Titre à gauche et menu de navigation à droite en ligne,
+ * alignés verticalement au centre
+ */
+header {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	flex: auto;
+	font-style: italic;
+	color: #0065FC;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.menu li:hover {
+	border-top: 2px solid #0065FC;
+}
+
+/* Main
+ */
+main {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.recherche {
+	display: flex;
+	flex-flow: column wrap;
+	flex: auto;
+	margin-right: auto;
+}
+
+.champ-recherche {
+	flex-direction: row;
+}
+
+.champ-recherche span, input, button {
+	border: 1px solid black;
+}
+
+.filtres {
+	display: flex;
+	flex-flow: row wrap;
+	align-self: flex-start;
+}
+
+.filtres li {
+	border: 1px solid black;
+}
+
+.resultats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.hebergements, .promotion {
+	background-color: #F2F2F2;
+}
+
+.hebergements {
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 2 2 0;
+}
+
+.hebergements ul {
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 1 1 0;
+}
+
+.promotion, .promotion ul {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+/* Footer
+ */
+footer {
+	display: flex;
+}
+
+footer section {
+	flex: auto;
+}
+
+footer section ul {
+	display: flex;
+	flex-flow: column wrap;
 }
