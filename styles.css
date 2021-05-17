@@ -16,9 +16,16 @@ section, div, aside {
 	border: 1px dashed black;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /* Pour l'ensemble de la page */
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -70,6 +77,10 @@ header h1 {
 	display: flex;
 	justify-content: flex-end;
 	margin-left: auto;
+}
+
+.menu li{
+	border-top: 2px solid rgba(0, 0, 0, 0);
 }
 
 .menu li:hover {
@@ -126,19 +137,24 @@ main {
 .hebergements {
 	display: flex;
 	flex-flow: column nowrap;
-	flex: 2 2 0;
+	flex: 2 2 auto;
 }
 
 .hebergements ul {
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	flex: 1 1 0;
+	flex: 1 1 auto;
+}
+
+.hebergements li img {
+	width: 60px;
 }
 
 .promotion, .promotion ul {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	flex: 1 1 auto;
 }
 
 /* Footer
