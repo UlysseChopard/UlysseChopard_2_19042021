@@ -17,7 +17,10 @@ section, div, aside {
 }
 
 img {
-	max-width: 100%;
+	/* max-width: 100%;
+	 * height: auto;
+	 */
+	width: 200px;
 	height: auto;
 }
 
@@ -144,10 +147,6 @@ main {
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	flex: 1 1 auto;
-}
-
-.hebergements li img {
-	width: 60px;
 }
 
 .promotion, .promotion ul {
