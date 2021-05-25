@@ -2,33 +2,13 @@
  * bleu clair : #DEEBFF
  * gris(fond) : #F2F2F2
  */
- 
- /* Construction */
-header, main, footer {
-	border: 3px dashed red;
-}
-
-section, div, aside {
-	border: 2px dashed blue;
-}
-
-* {
-	border: 1px dashed black;
-}
-
-img {
-	/* max-width: 100%;
-	 * height: auto;
-	 */
-	width: 200px;
-	height: auto;
-}
 
 /* Pour l'ensemble de la page */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-style: "Raleway", "Open Sans", sans-serif;
 }
 
 p {
@@ -169,4 +149,22 @@ footer section {
 footer section ul {
 	display: flex;
 	flex-flow: column wrap;
+}
+
+ /* Construction */
+ header, main, footer {
+	border: 3px dashed red;
+}
+
+section, div, aside {
+	border: 2px dashed blue;
+}
+
+* {
+	border: 1px dashed black;
+}
+
+img {
+	width: 200px;
+	height: auto;
 }
