@@ -3,168 +3,223 @@
  * gris(fond) : #F2F2F2
  */
 
+/*
+ * RESET CSS
+ */
+
 /* Pour l'ensemble de la page */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-style: "Raleway", "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-style: "Raleway", "Open Sans", sans-serif;
 }
 
 p {
-	font-style: italic;
+  font-style: italic;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-	display: flex;
-	flex: auto;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	list-style-type: none;
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 li {
-	margin: auto 10px;
+  margin: auto 10px;
 }
 
 body {
-	display: flex;
-	flex: auto;
-	flex-direction: column;
-	font-family: "Raleway", "Open-sans", sans-serif;
-	margin: 0 4%;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  font-family: "Raleway", "Open Sans", sans-serif;
+  margin: 0 4%;
 }
 
-/* Header : Titre à gauche et menu de navigation à droite en ligne,
+/* 
+ * HEADER : Titre à gauche et menu de navigation à droite en ligne,
  * alignés verticalement au centre
  */
 header {
-	display: flex;
-	flex: 1;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-	flex: auto;
-	font-style: italic;
-	color: #0065FC;
+  flex: auto;
+  font-style: italic;
+  color: #0065fc;
 }
 
 .menu {
-	display: flex;
-	justify-content: flex-end;
-	margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
-.menu li{
-	border-top: 2px solid rgba(0, 0, 0, 0);
+.menu li {
+  border-top: 2px solid rgba(0, 0, 0, 0);
 }
 
 .menu li:hover {
-	border-top: 2px solid #0065FC;
+  border-top: 2px solid #0065fc;
 }
 
-/* Main
+/* 
+ * MAIN
  */
+
 main {
-	display: flex;
-	flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
+
+/* 
+ * RECHERCHE
+ */
 
 .recherche {
-	display: flex;
-	flex-flow: column wrap;
-	flex: auto;
-	margin-right: auto;
+  display: flex;
+  flex-flow: column wrap;
+  flex: auto;
+  margin-right: auto;
 }
 
 .champ-recherche {
-	flex-direction: row;
+  flex-direction: row;
 }
 
-.champ-recherche span, input, button {
-	border: 1px solid black;
+.champ-recherche span,
+input,
+button {
+  border: 1px solid black;
 }
 
 .filtres {
-	display: flex;
-	flex-flow: row wrap;
-	align-self: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  align-self: flex-start;
 }
 
 .filtres ul {
-	display: flex;
+  display: flex;
 }
 
 .filtres li {
-	flex: auto;
-	border: 1px solid black;
+  flex: auto;
+  border: 1px solid black;
 }
+
+.far .fa-circle {
+  z-index: 0;
+}
+
+.fa .fa-info {
+  z-index: 1;
+}
+
+/*
+ * HEBERGEMENTS
+ */
 
 .resultats {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.hebergements, .promotion {
-	background-color: #F2F2F2;
+.hebergements,
+.promotion {
+  background-color: #f2f2f2;
 }
 
 .hebergements {
-	display: flex;
-	flex-flow: column nowrap;
-	flex: 2 2 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 2;
 }
 
 .hebergements ul {
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	flex: 1 1 auto;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex: 1 1 auto;
 }
 
-.promotion, .promotion ul {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	flex: 1 1 auto;
+.promotion,
+.promotion ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
 }
 
-/* Footer
+/* 
+ * FOOTER
  */
+
 footer {
-	display: flex;
+  display: flex;
 }
 
 footer section {
-	flex: auto;
+  flex: auto;
 }
 
 footer section ul {
-	display: flex;
-	flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
- /* Construction */
- header, main, footer {
-	border: 3px dashed red;
+/* Construction */
+header,
+main,
+footer {
+  border: 3px dashed red;
 }
 
-section, div, aside {
-	border: 2px dashed blue;
+section,
+div,
+aside {
+  border: 2px dashed blue;
 }
 
 * {
-	border: 1px dashed black;
+  border: 1px dashed black;
 }
 
 img {
-	width: 200px;
-	height: auto;
+  max-width: 100%;
+  height: 100px;
 }
+
+/* vignettes */
+.resultats {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+}
+
+.hebergements {
+  width: 75%;
+}
+
+.vignette {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+
+
+/*
+ * RESPONSIVE
+ */
