@@ -1,293 +1,102 @@
-/* bleu : #0065FC
- * bleu clair : #DEEBFF
- * gris(fond) : #F2F2F2
- */
-
-/*
- * RESET CSS
- */
-
-/* Pour l'ensemble de la page */
-*, p {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", "Open Sans", sans-serif;
-  font-size: normal;
-  font-weight: normal;
-  color: black;
+* {
+    font-family: "Raleway", "Open-sans", sans-serif;
 }
 
-html {
-  height: 100%;
+/* flex elements */
+body, header, header ul, main, .filtres, .filtres ul, .filtres a, .nombre-logements, .cartes, .resultats, .resultats-titre, .premiers-resultats, .activites ul, .hebergements ul, footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* flex tailles */
+.hebergements {
+    flex: 3;
+}
+
+.promotion {
+    flex: 1;
+} 
+.vignette {
+    flex: 30%;
+}
+
+.filtres a {
+    flex: 1 1 0;
+}
+
+/* flex-direction */
+body, main, .promotion, .hebergements {
+    flex-direction: column;
+}
+
+/* organisation dans les éléments */
+.recherche, .hebergements {
+    align-self: flex-start;
+}
+
+
+.promotion {
+    align-items: flex-end;
+}
+
+header, .menu, .recherche, .champ-recherche, .filtres, .filtres a, .resultats-titre, .hebergements ul {
+    align-items: center;
+}
+
+.recherche {
+    align-items: space-between;
+}
+
+header, .filtres ul, .premiers-resultats, .resultats-titre, footer {
+    justify-content: space-between;
+}
+
+.hebergements {
+    justify-content: space-around;
+}
+
+.filtres a > * {
+    justify-content: space-around;
+}
+
+/* Pour l'ensemble de la page */
+li {
+    list-style-type: none;
+    padding: 1em;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: black;
 }
 
-ul {
-  list-style-type: none;
-}
-
-body {
-  display: flex;
-  flex: auto;
-  flex-direction: column;
-  padding: 1%;
-}
-
-/* 
- * HEADER : Titre à gauche et menu de navigation à droite en ligne,
- * alignés verticalement au centre
- */
-header {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  flex: 2 1 0;
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0;
-  justify-content: center;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menu h2 {
-  border-top: 2px solid rgba(0, 0, 0, 0);
-}
-
-.menu li:hover {
-  border-top: 2px solid #0065fc;
-}
-
-.menu h2:hover {
-  color: #0065FC;
-}
-
-.inscription {
-  font-weight: bold;
-  color: #0065fc;
-}
-/* 
- * MAIN
- */
-
-main {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-/* 
- * RECHERCHE
- */
-
-.recherche {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-  flex: 1 1 auto; 
-}
-
-.sous-titre {
-  flex: none;
-}
-
-.sous-titre h1 {
-  font-weight: bold;
-  font-size: x-large;
-}
-
-.champ-recherche {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  border: 2px solid red;
-  border-radius: 1em;
-  flex: 4;
-}
-
-.champ-recherche ::placeholder {
-  color: black;
-  font-weight: bold;
-}
-
-.champ-recherche input {
-  font-size: normal;
-  font-weight: bold;
-  color: black;
-}
-
-.champ-recherche .fas .fa-map-marker-alt {
-  background-color: #F2F2F2;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
-}
-
-.champ-recherche button {
-  background-color: #0065FC;
-  text-align: center;
-  font-weight: normal;
-  color: white;
-  border-bottom-right-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
-.filtres {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: space-around;
-  flex: 1;
-}
-
-.filtres h2 {
-  display: flex;
-  flex: auto;
-}
-
-.filtres ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.filtres li {
-  flex-wrap: nowrap;
-  border: 2px solid #F2F2F2;
-  border-radius: 1em;
-}
-
-.filtres a, .filtres h2 {
-  display: flex;
-  align-items: center;
+.vignette, .filtres li {
+    padding: 1em;
+    border-radius: 1em;
 }
 
 .nombre-logements {
-  flex: 1;
+    padding: 1em;
 }
 
-/*
- * HEBERGEMENTS
- */
-
-.resultats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  object-fit: cover;
-}
-
-.hebergements,
-.promotion {
-  background-color: #f2f2f2;
-}
-
-.hebergements {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 2;
-}
-
-.hebergements ul {
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  flex: 1 1 auto;
-}
-
-.promotion,
-.promotion ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex: 1;
-}
-
-.activites {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-}
-
-/* 
- * FOOTER
- */
-
-footer {
-  display: flex;
-}
-
-footer section {
-  flex: auto;
-}
-
-footer section ul {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-
-/* Construction */
-header,
-main,
-footer {
-  border: 3px dashed red;
-}
-
-section,
-div,
-aside {
-  border: 2px dashed blue;
-}
-
-* {
-  border: 2px dashed black;
-}
-
-/* vignettes */
-.vignette {
-	display: flex;
-	flex: auto;
-	object-fit: cover;
-  padding: 1em;
-  margin: 1em;
-  border-radius: 1em;
-}
-
+/* images */
 .vignette img {
-  max-width: 100%;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
-.resultats {
-  display: flex;
-  flex: auto;
+.hebergements .vignette img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-.hebergements {
-  display: flex;
+.promotion .vignette img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
 }
 
-.hebergements .vignette {
-	flex-direction: column;
-	flex: 22%;
+.activites .vignette img {
+    object-fit: contain;
 }
-
-
-/*
- * RESPONSIVE
- */
