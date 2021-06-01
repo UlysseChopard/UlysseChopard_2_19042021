@@ -25,11 +25,11 @@
 	-->
   </head>
 
-  <body>
-    <header>
-      <div class="logo"><img src="./images/logo/Reservia.svg" /></div>
+  <body class="flex colonne largeur-totale centre flex-space-between">
+    <header class="flex largeur-totale flex-space-between centre">
+      <img src="./images/logo/Reservia.svg" />
 
-      <nav class="menu">
+      <nav class="menu flex flex-centre centre">
         <ul>
           <li>
             <a href="#hebergements"><h2>Hébergements</h2></a>
@@ -44,28 +44,28 @@
       </nav>
     </header>
 
-    <main>
-      <section class="recherche">
-        <div class="sous-titre">
+    <main class="flex colonne flex-space-around flex-start">
+      <section class="recherche flex colonne flex-start">
+        <div class="sous-titre colonne flex flex-start">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre-ville ou en pleine nature</p>
         </div>
 
-        <div class="champ-recherche">
+        <div class="champ-recherche flex flex-start flex-space-between">
           <span class="fas fa-map-marker-alt"></span>
           <input
             type="search"
             name="q"
             aria-label="Recherchez votre hébergement"
-            placeholder="Marseille, France" 
+            placeholder="Marseille, France"
           />
           <button type="submit">Rechercher</button>
         </div>
 
-        <div class="filtres">
+        <div class="filtres flex flex-start centre">
           <h2>Filtres</h2>
-          <ul>
-            <li>
+          <ul class="flex centre largeur-totale">
+            <li class="flex centre largeur-totale">
               <a href="#"
                 ><i class="fas fa-money-bill-wave fa-fw"></i>
                 <h2>Economique</h2></a
@@ -92,17 +92,17 @@
           </ul>
         </div>
 
-        <div class="nombre-logements">
-          <i class="fas fa-info"></i><p>Plus de 500 logements sont disponibles pour
-          cette ville</p>
+        <div class="nombre-logements flex">
+          <i class="fas fa-info"></i>
+          <p>Plus de 500 logements sont disponibles pour cette ville</p>
         </div>
       </section>
 
-      <div class="resultats">
-        <section class="hebergements premiers-resultats" id="hebergements">
-          <h1 class="resultats-titre">Hébergements à Marseille</h1>
-          <ul class="cartes">
-            <li class="vignette">
+      <div class="resultats flex largeur-totale">
+        <section class="hebergements flex colonne" id="hebergements">
+          <h1>Hébergements à Marseille</h1>
+          <ul>
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -111,7 +111,7 @@
                 <h2>Auberge la Canebière</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -119,7 +119,7 @@
                 <h2>Hôtel du port</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -127,7 +127,7 @@
                 <h2>Hôtel Les mouettes</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -135,7 +135,7 @@
                 <h2>Hôtel de la mer</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -143,7 +143,7 @@
                 <h2>Auberge Le panier</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -154,13 +154,13 @@
           </ul>
         </section>
 
-        <aside class="promotion premiers-resultats">
-          <div class="resultats-titre">
+        <aside class="promotion flex colonne">
+          <div class="flex">
             <h1>Les plus populaires</h1>
             <i class="fas fa-chart-line"></i>
           </div>
-          <ul>
-            <li class="vignette">
+          <ul class="flex">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -168,7 +168,7 @@
                 <h2>Hotel Le soleil du matin</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -176,7 +176,7 @@
                 <h2>Au coeur de l'eau Chambres d'hôtes</h2></a
               >
             </li>
-            <li class="vignette">
+            <li>
               <a href="#"
                 ><img
                   src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -188,10 +188,11 @@
         </aside>
       </div>
 
-      <section class="activites" id="activites">
+      <section class="activites flex colonne largeur-totale" id="activites">
         <h1>Activités à Marseille</h1>
-        <ul>
-          <li class="vignette">
+        <ul class="flex">
+          <div class="vignette-activites flex colonne">
+          <li>
             <a href="#"
               ><img
                 src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
@@ -199,7 +200,9 @@
               <h2>Vieux Port</h2></a
             >
           </li>
-          <li class="vignette">
+        </div>
+        <div class="vignette-activites flex colonne">
+          <li>
             <a href="#"
               ><img
                 src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
@@ -207,7 +210,7 @@
               <h2>Fort de Pomègues</h2></a
             >
           </li>
-          <li class="vignette">
+          <li>
             <a href="#"
               ><img
                 src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
@@ -215,7 +218,9 @@
               <h2>Îles du Frioul</h2></a
             >
           </li>
-          <li class="vignette">
+        </div>
+        <div class="vignette-activites flex colonne">
+          <li>
             <a href="#"
               ><img
                 src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -223,7 +228,9 @@
               <h2>National des Calanques</h2></a
             >
           </li>
-          <li class="vignette">
+        </div>
+        <div class="vignette-activite flex colonne">
+          <li>
             <a href="#"
               ><img
                 src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
@@ -231,7 +238,7 @@
               <h2>Notre-Dame de la Garde</h2></a
             >
           </li>
-          <li class="vignette">
+          <li>
             <a href="#"
               ><img
                 src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
@@ -239,14 +246,15 @@
               <h2>Parc Longchamp</h2></a
             >
           </li>
+        </div>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <section class="a-propos">
+    <footer class="flex largeur-totale">
+      <section class="a-propos flex colonne">
         <h1>A propos</h1>
-        <ul>
+        <ul class="flex colonne">
           <li>
             <a href="#"><h2>Fonctionnement du site</h2></a>
           </li>
@@ -259,9 +267,9 @@
         </ul>
       </section>
 
-      <section class="a-propos">
+      <section class="nos-hebergements flex colonne">
         <h1>Nos hébergements</h1>
-        <ul>
+        <ul class="flex colonne">
           <li>
             <a href="#"><h2>Charte qualité</h2></a>
           </li>
@@ -271,9 +279,9 @@
         </ul>
       </section>
 
-      <section class="a-propos">
+      <section class="assistance flex colonne">
         <h1>Assistance</h1>
-        <ul>
+        <ul class="flex colonne">
           <li>
             <a href="#"><h2>Centre d'aide</h2></a>
           </li>
