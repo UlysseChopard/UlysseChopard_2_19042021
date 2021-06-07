@@ -34,17 +34,23 @@ header {
   flex: 2;
 }
 
-header nav {
-  display: inline-flex;
-  justify-content: space-around;
+header .menu {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
-header nav > li {
-  border-top: 2px none blue;
+header .menu ul {
+  display: inline-flex;
+  justify-content: space-around;
 }
 
-header nav > li:hover {
+header .menu li {
+  align-items: center;
+  border-top: 2px hidden blue;
+}
+
+header .menu li:hover {
   border-top-style: solid;
 }
 
@@ -96,7 +102,20 @@ main {
 .recherche .filtres > * {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.recherche .filtres h3 {
+  flex: 0 0 10%;
+}
+
+.recherche .filtres ul {
+  flex: 1 1 30%;
+}
+
+.recherche .fa-info {
+  border: 1px solid black;
+  border-radius: 2em;
 }
 
 /* main .resultats */
@@ -120,6 +139,8 @@ main {
 
 .resultats .activites {
   border: 2px dotted black;
+  flex: 100%;
+  flex-wrap: wrap;
 }
 
 /* footer */
