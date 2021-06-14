@@ -5,48 +5,29 @@
   .hebergements {
     display: flex;
     flex-direction: column;
-    flex: 0 0 3;
+    flex: 3;
+  }
+
+  .promotions {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .activites {
+    display: flex;
+    flex-direction: column;
   }
   
   .contenu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: baseline;
-  }
-  
-  .vignette {
-    flex: 33%;
-  }
-  
-  .vignette img {
-    object-fit: cover;
-    min-height: 5px;
-    min-width: 20px;
-    height: 15vh;
-    width: 20vw;
-  }
-  
-  .promotions {
-    flex: 0 0 1;
-  }
-  
-  .promotions .sous-titre {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
   }
-  
-  .promotions .sous-titre h3 {
-    flex: 9;
-  }
-  
-  .sous-titre .fa-chart-line {
-    flex: 1;
-  }
-  
-  .activites {
+
+  .sous-titre {
     display: flex;
-    flex: 100%;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }

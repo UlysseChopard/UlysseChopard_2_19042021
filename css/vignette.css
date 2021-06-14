@@ -1,0 +1,74 @@
+.vignette {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.vignette > img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.figcaption {
+    flex: 1 1 0;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.vignette_hebergements {
+    flex: 33%;
+    height: 50%;
+}
+
+.vignette_hebergements > img {
+    height: 70%;
+}
+
+.vignette_promotions > img {
+    width: 30%;
+    height: 30vh;
+    justify-content: space-around;
+}
+
+.vignette_activites {
+    flex: 25%;
+}
+
+.vignette_activites > img {
+    height: 50vh;
+}
+
+.vignette--double > img {
+    height: 102vh;
+}
+
+.vignette--verticale {
+    flex-direction: column;
+}
+
+.vignette--double {
+    height: 100%;
+}
+
+/*
+.vignette_hebergements {
+    flex: 33%;
+}
+
+.vignette--horizontale {
+    display: flex;
+}
+
+.vignette--horizontale > img {
+    flex: 1 1 0;
+}
+
+.vignette--horizontale > figcaption {
+    flex: 3 3 0;
+}
+
+.vignette--double {
+    min-height: 100vh;
+}
+*/
