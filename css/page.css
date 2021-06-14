@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+  }
+  
+header, main, footer {
+    display: flex;
+  }

@@ -15,22 +15,21 @@
 
     <!-- Icons -->
     <script
-    src="https://kit.fontawesome.com/e33b8d6431.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/e33b8d6431.js"
+      crossorigin="anonymous"
     ></script>
-    
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="./images/logo/Reservia.svg">
+        <img src="./images/logo/Reservia.svg" />
       </div>
       <nav class="menu">
         <ul>
           <li><a href="#hebergements">Hébergements</a></li>
           <li><a href="#activites">Activités</a></li>
           <li><a href="#">S'inscrire</a></li>
-       </ul>
+        </ul>
       </nav>
     </header>
     <main>
@@ -39,20 +38,16 @@
         <p>En plein centre-ville ou en pleine nature</p>
         <menu class="champ">
           <i class="fas fa-map-marker-alt"></i>
-          <input type="search" placeholder="Marseille, France">
+          <input type="search" placeholder="Marseille, France" />
           <button type="submit" value="Rechercher">Rechercher</button>
         </menu>
         <menu class="filtres">
           <h3>Filtres</h3>
           <ul>
-            <li><i class="fas fa-money-bill-wave fa-fw"></i>
-              Economique</li>
-            <li><i class="fas fa-child fa-fw"></i>
-              Familial</li>
-            <li><i class="fas fa-heart fa-fw"></i>
-              Romantique</li>
-            <li><i class="fas fa-dog fa-fw"></i>
-              Animaux autorisés</li>
+            <li><i class="fas fa-money-bill-wave fa-fw"></i> Economique</li>
+            <li><i class="fas fa-child fa-fw"></i> Familial</li>
+            <li><i class="fas fa-heart fa-fw"></i> Romantique</li>
+            <li><i class="fas fa-dog fa-fw"></i> Animaux autorisés</li>
           </ul>
         </menu>
         <div class="nombre-resultats">
@@ -61,31 +56,88 @@
         </div>
       </section>
       <section class="resultats">
-      <div class="row">
-        <article class="hebergements" id="hebergements">
-          <div class="sous-titre">
-            <h3>Hébergements à Marseille</h3>
-          </div>
-          <div class="contenu">
-            <div class="vignette">
-              <img src="images/hebergements/4_small/">
+        <div class="row">
+          <article class="hebergements" id="hebergements">
+            <div class="sous-titre">
+              <h3>Hébergements à Marseille</h3>
             </div>
-          </div>
-          <div><a href="#">Afficher plus</a></div>
-        </article>
-        <article class="promotions" id="promotions">
-          <div class="sous-titre">
-            <h3>Les plus populaires</h3>
-            <i class="fas fa-chart-line"></i>
-          </div>
-        </article>
-      </div>
-      <article class="activites" id="activites">
-        <div class="sous-titre">
-          <h3>Activités à Marseille</h3>
+            <div class="contenu">
+              <figure class="vignette">
+                <img
+                  src="images/hebergements/4_small/auberge-de-la-cannebiere.jpg"
+                  alt="Auberge la Cannebière"
+                />
+                <figcaption>
+                  <h3>Auberge la Cannebière</h3>
+                  <p>Nuit à partir de <strong>25&euro;</strong></p>
+                </figcaption>
+              </figure>
+              <figure class="vignette">
+                <img
+                  src="images/hebergements/4_small/hotel-du-port.jpg"
+                  alt="Hotel du port"
+                />
+                <figcaption>
+                  <h3>Hôtel du port</h3>
+                  <p>Nuit à partir de 52&euro;</p>
+                </figcaption>
+              </figure>
+              <figure class="vignette">
+                <img
+                  src="images/hebergements/4_small/hotel-les-mouettes.jpg"
+                  alt="Hôtel Les mouettes"
+                />
+                <figcaption>
+                  <h3>Hôtel Les mouettes</h3>
+                  <p>Nuit à partir de 76&euro;</p>
+                </figcaption>
+              </figure>
+              <figure class="vignette">
+                <img
+                  src="images/hebergements/4_small/hotel-de-la-mer.jpg"
+                  alt="Hôtel de la mer"
+                />
+                <figcaption>
+                  <h3>Hôtel de la mer</h3>
+                  <p>Nuit à partir de 46&euro;</p>
+                </figcaption>
+              </figure>
+              <figure class="vignette">
+                <img
+                  src="images/hebergements/4_small/auberge-le-panier.jpg"
+                  alt="Auberge Le Panier"
+                />
+                <figcaption>
+                  <h3>Auberge Le Panier</h3>
+                  <p>Nuit à partir de <strong>23&euro;</strong></p>
+                </figcaption>
+              </figure>
+              <figure class="vignette">
+                <img
+                  src="images/hebergements/4_small/hotel-chez-amina.jpg"
+                  alt="Hôtel chez Amina"
+                />
+                <figcaption>
+                  <h3>Hôtel chez Amina</h3>
+                  <p>Nuit à partir de 96&euro;</p>
+                </figcaption>
+              </figure>
+            </div>
+            <p><a href="#">Afficher plus</a></p>
+          </article>
+          <article class="promotions" id="promotions">
+            <div class="sous-titre">
+              <h3>Les plus populaires</h3>
+              <i class="fas fa-chart-line"></i>
+            </div>
+          </article>
         </div>
-      </article>
-    </section>
+        <article class="activites" id="activites">
+          <div class="sous-titre">
+            <h3>Activités à Marseille</h3>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
       <nav>
@@ -105,7 +157,7 @@
           <li>Centre d'aide</li>
           <li>Nous contacter</li>
         </ul>
-    </nav>
+      </nav>
     </footer>
   </body>
 </html>
