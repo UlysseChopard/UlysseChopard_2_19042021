@@ -1,9 +1,33 @@
 body {
     display: flex;
     flex-direction: column;
-    padding: 1%;
+    align-items: center;
   }
   
 header, main, footer {
     display: flex;
+    flex: 1;
   }
+
+header, main {
+  padding: 0 2% 0 2%;
+}
+
+header {
+  height: 10vh;
+}
+
+footer {
+  height: 20vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+main {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: 100vh;
+  max-width: 100%;
+}

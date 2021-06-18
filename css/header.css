@@ -16,15 +16,16 @@ header {
   .menu ul {
     display: flex;
     justify-content: space-around;
-    flex: 1 1 0;
+    align-items: center;
+    flex: 1;
   }
   
   .menu li {
     display: inline-flex;
     border-top: 2px solid transparent;
-    padding-top: 20px;
   }
   
   .menu li:hover {
     border-top-color: blue;
+    color: blue;
   }

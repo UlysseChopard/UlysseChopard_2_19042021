@@ -1,5 +1,62 @@
 .vignette {
     display: flex;
+    object-fit: cover;
+    padding: 1px;
+    margin: 4px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: white;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.vignette > img {
+    flex: 1;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 1px;
+    margin: 4px;
+    align-self: center;
+}
+
+.vignette--verticale {
+    flex-direction: column;
+}
+
+.vignette--verticale > img {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0;
+}
+
+.vignette_row {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+}
+
+.vignette_hebergements {
+    flex: 1;
+}
+
+.vignette_hebergements > img  {
+    height: 50px;
+    width: 100px;
+}
+
+.vignette_promotions > img {
+    flex: 33%;
+    height: 20vh;
+}
+
+.vignette_activites {
+    flex: 1;
+}
+
+/*.vignette {
+    display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px;
@@ -36,11 +93,11 @@
 }
 
 .vignette_activites > img {
-    height: 50vh;
+    height: 30vh;
 }
 
 .vignette--double > img {
-    height: 102vh;
+    height: 61vh;
 }
 
 .vignette--verticale {
@@ -51,7 +108,7 @@
     height: 100%;
 }
 
-/*
+TEST 1
 .vignette_hebergements {
     flex: 33%;
 }
