@@ -7,15 +7,9 @@ header {
   flex: 2;
 }
 
-.menu {
-  flex-direction: column;
-  flex: 1;
-}
-
 .menu ul {
   justify-content: space-around;
   align-items: center;
-  flex: 1;
 }
 
 .menu li {

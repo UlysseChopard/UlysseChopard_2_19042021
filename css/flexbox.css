@@ -6,6 +6,7 @@ header,
 main,
 footer,
 ul,
+nav,
 .logo,
 .menu,
 .recherche,
@@ -24,13 +25,55 @@ ul,
 .sous-titre,
 .contenu,
 .vignette-row,
-.vignette
-{
-    display: flex;
+.vignette {
+  display: flex;
 }
 
 /* Conteneurs en colonne */
 
-.vignette {
-    flex-direction: column;
+body,
+main,
+.menu,
+.recherche,
+.champ-recherche,
+.recherche-sous-titre,
+.hebergements,
+.promotions,
+.activites,
+.vignette--verticale {
+  flex-direction: column;
+}
+
+/* Valeurs flex standards */
+
+/* flex: 1 1 0 */
+footer,
+.menu,
+.menu > ul,
+footer > nav,
+.colonne-footer,
+.colonne-footer > *,
+.recherche,
+.recherche-sous-titre,
+.resultats-row,
+.promotions,
+.activites
+{
+  flex: 1;
+}
+
+/* flex: 1 1 auto */
+.champ input[type="search"]
+{
+  flex: auto;
+}
+
+/* flex: 0 1 auto */
+{
+  flex: initial;
+}
+
+/* flex: 0 0 auto */
+{
+  flex: none;
 }

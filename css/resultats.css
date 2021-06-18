@@ -15,23 +15,8 @@
   background-color: #f2f2f2;
 }
 
-.resultats_row {
-  flex: 1;
-}
-
 .hebergements {
-  flex-direction: column;
   flex: 3;
-}
-
-.promotions {
-  flex-direction: column;
-  flex: 1;
-}
-
-.activites {
-  flex-flow: column nowrap;
-  flex: 1;
 }
 
 .contenu {
