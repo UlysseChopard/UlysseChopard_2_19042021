@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 5px;
+    padding: 0 5px;
   }
   
 header, main, footer {
@@ -9,18 +11,17 @@ header, main, footer {
     flex: 1;
   }
 
-header, main {
-  padding: 0 2% 0 2%;
-}
-
 header {
   height: 10vh;
+  width: 100%;
 }
 
 footer {
+  flex: 1;
   height: 20vh;
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
 main {
@@ -29,5 +30,5 @@ main {
   align-items: center;
   flex: 1;
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
 }

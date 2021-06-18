@@ -4,6 +4,7 @@
     align-items: flex-start;
     min-height: 25vh;
     flex: 1;
+    width: 100%;
   }
   
   .recherche-sous-titre {

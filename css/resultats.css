@@ -18,6 +18,7 @@
 
 .resultats_row {
   display: flex;
+  flex: 1;
 }
 
 .hebergements {

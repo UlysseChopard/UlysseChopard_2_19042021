@@ -1,31 +1,31 @@
 header {
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    flex: 2;
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex: 1;
-  }
-  
-  .menu li {
-    display: inline-flex;
-    border-top: 2px solid transparent;
-  }
-  
-  .menu li:hover {
-    border-top-color: blue;
-    color: blue;
-  }
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 2;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+.menu li {
+  display: inline-flex;
+  border-top: 2px solid transparent;
+}
+
+.menu li:hover {
+  border-top-color: blue;
+  color: blue;
+}
