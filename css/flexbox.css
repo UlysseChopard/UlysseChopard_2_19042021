@@ -1,0 +1,36 @@
+/* Conteneurs */
+
+html,
+body,
+header,
+main,
+footer,
+ul,
+.logo,
+.menu,
+.recherche,
+.resultats,
+.nav,
+.recherche-sous-titre,
+.champ-recherche,
+.nombre-resultats,
+.resultats-row,
+.colonne-footer,
+.champ,
+.filtres,
+.hebergements,
+.promotions,
+.activites,
+.sous-titre,
+.contenu,
+.vignette-row,
+.vignette
+{
+    display: flex;
+}
+
+/* Conteneurs en colonne */
+
+.vignette {
+    flex-direction: column;
+}

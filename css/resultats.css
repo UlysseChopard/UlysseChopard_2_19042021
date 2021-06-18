@@ -1,5 +1,4 @@
 .resultats {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -17,37 +16,31 @@
 }
 
 .resultats_row {
-  display: flex;
   flex: 1;
 }
 
 .hebergements {
-  display: flex;
   flex-direction: column;
   flex: 3;
 }
 
 .promotions {
-  display: flex;
   flex-direction: column;
   flex: 1;
 }
 
 .activites {
-  display: flex;
   flex-flow: column nowrap;
   flex: 1;
 }
 
 .contenu {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 .sous-titre {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
