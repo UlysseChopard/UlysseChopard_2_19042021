@@ -21,10 +21,13 @@ html {
 
 main {
   justify-content: space-between;
-  align-items: center;
   flex: 5;
 }
 
 img {
   max-width: 100%;
+}
+
+.fit-cover {
+  object-fit: cover;
 }

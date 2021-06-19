@@ -1,20 +1,11 @@
 footer > nav {
-    justify-content: flex-start;
-    align-items: center;
     background-color: #f2f2f2;
   }
 
   .colonne-footer {
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: space-around;
     height: 50%;
     margin-left: 2%;
-  }
-  
-  .colonne-footer > ul {
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .colonne-footer > p {

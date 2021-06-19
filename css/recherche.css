@@ -1,11 +1,4 @@
-.recherche {
-    align-items: flex-start;
-    min-height: 25vh;
-    width: 100%;
-  }
-  
-  .recherche-sous-titre {
-    align-items: flex-start;
+ .recherche-sous-titre {
     justify-content: space-around;
   }
 
@@ -13,16 +6,9 @@
     font-weight: bolder;
   }
   
-  .champ {
-    justify-content: flex-start;
-    align-items: center;
-    height: 10vh;
-    flex: 40%;
-  }
-  
   .fa-map-marker-alt {
-    min-height: 100%;
-    min-width: 2vw;
+    /* min-height: 100%; */
+    /* min-width: 2vw; */
     background-color: #f2f2f2;
   }
   
@@ -31,18 +17,10 @@
     flex: 4;
   } */
   
-  .champ button {
+  .champ > button {
     flex: 3;
   }
   
-  .filtres {
-    align-items: center;
-  }
-  
-  .filtres > * {
-    align-items: center;
-    justify-content: flex-start;
-  }
   
   .filtres h3 {
     flex: 0 0 10%;
@@ -54,8 +32,6 @@
   
   .nombre-resultats {
     display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
     flex: 0 0 40%;
   }
   

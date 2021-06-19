@@ -1,4 +1,7 @@
-
+.vignette > img {
+    height: 40px;
+    width: 70px;
+}
 /*
 .vignette {
     padding: 1px;

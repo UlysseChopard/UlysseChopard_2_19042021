@@ -1,7 +1,3 @@
-.resultats {
-  flex-wrap: wrap;
-}
-
 .hebergements,
 .promotions,
 .activites {
@@ -15,17 +11,24 @@
   background-color: #f2f2f2;
 }
 
+.resultats-row {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
 .hebergements {
   flex: 3;
 }
 
 .contenu {
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+}
+
+.activites .contenu {
+  flex-direction: row;
 }
 
 .sous-titre {
   justify-content: space-between;
-  align-items: center;
 }

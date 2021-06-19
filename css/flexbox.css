@@ -33,6 +33,7 @@ nav,
 
 body,
 main,
+.resultats,
 .menu,
 .recherche,
 .champ-recherche,
@@ -40,40 +41,73 @@ main,
 .hebergements,
 .promotions,
 .activites,
-.vignette--verticale {
+.contenu,
+.vignette--verticale,
+.colonne-footer,
+.colonne-footer > ul {
   flex-direction: column;
 }
 
 /* Valeurs flex standards */
 
 /* flex: 1 1 0 */
+body,
+main,
+header,
 footer,
 .menu,
 .menu > ul,
 footer > nav,
 .colonne-footer,
 .colonne-footer > *,
-.recherche,
 .recherche-sous-titre,
 .resultats-row,
 .promotions,
-.activites
-{
+.activites {
   flex: 1;
 }
 
 /* flex: 1 1 auto */
-.champ input[type="search"]
-{
+.champ input[type="search"],
+.recherche {
   flex: auto;
 }
 
-/* flex: 0 1 auto */
+/*
+flex: 0 1 auto
 {
   flex: initial;
 }
+*/
 
-/* flex: 0 0 auto */
+/*
+flex: 0 0 auto
 {
   flex: none;
+}
+*/
+
+/* Disposition des elements */
+
+/* Centrage */
+main,
+header,
+.menu > ul,
+footer > nav,
+.colonne-footer,
+.champ,
+.filtres,
+.filtres > *,
+.nombre-resultats,
+.contenu,
+.sous-titre {
+  align-items: center;
+}
+
+footer > nav,
+.colonne-footer > ul,
+.champ,
+.filtres > *,
+.nombre-resultats {
+  justify-content: flex-start;
 }

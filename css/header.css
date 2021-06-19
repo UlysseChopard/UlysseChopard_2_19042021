@@ -1,5 +1,4 @@
 header {
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -7,9 +6,8 @@ header {
   flex: 2;
 }
 
-.menu ul {
+.menu > ul {
   justify-content: space-around;
-  align-items: center;
 }
 
 .menu li {
