@@ -8,6 +8,7 @@ header {
 
 .menu > ul {
   justify-content: space-around;
+  align-items: center;
 }
 
 .menu li {

@@ -1,6 +1,4 @@
 /* Conteneurs */
-
-html,
 body,
 header,
 main,
@@ -18,14 +16,16 @@ nav,
 .resultats-row,
 .colonne-footer,
 .champ,
-.filtres,
+.filtres-wrapper,
 .hebergements,
 .promotions,
 .activites,
 .sous-titre,
 .contenu,
 .vignette-row,
-.vignette {
+.vignette,
+.vignette-activites,
+.vignette-description {
   display: flex;
 }
 
@@ -42,7 +42,9 @@ main,
 .promotions,
 .activites,
 .contenu,
+.vignette-description,
 .vignette--verticale,
+.vignette-activites,
 .colonne-footer,
 .colonne-footer > ul {
   flex-direction: column;
@@ -64,21 +66,20 @@ footer > nav,
 .resultats-row,
 .promotions,
 .activites {
-  flex: 1;
+  flex: 1 1 0;
 }
 
 /* flex: 1 1 auto */
-.champ input[type="search"],
 .recherche {
   flex: auto;
 }
 
-/*
-flex: 0 1 auto
-{
-  flex: initial;
+
+/* flex: 0 1 auto */
+.vignette {
+  flex: none;
 }
-*/
+
 
 /*
 flex: 0 0 auto
@@ -90,24 +91,24 @@ flex: 0 0 auto
 /* Disposition des elements */
 
 /* Centrage */
-main,
+/* main,
 header,
 .menu > ul,
 footer > nav,
 .colonne-footer,
 .champ,
-.filtres,
-.filtres > *,
+.filtres-wrapper,
+.filtres-wrapper > *,
 .nombre-resultats,
 .contenu,
 .sous-titre {
-  align-items: center;
-}
+  align-items: stretch;
+} */
 
-footer > nav,
+/* footer > nav,
 .colonne-footer > ul,
 .champ,
-.filtres > *,
+.filtres-wrapper > *,
 .nombre-resultats {
   justify-content: flex-start;
-}
+} */

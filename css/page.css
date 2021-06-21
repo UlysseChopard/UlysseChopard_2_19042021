@@ -1,31 +1,32 @@
-html {
-  /* flex-wrap: wrap;
+/* html {
+  flex-wrap: wrap;
   justify-content: space-between;
-  flex: 1; */
-  align-items: center;
+  flex: 1;
+  align-items: stretch;
+} */
+
+ body {
+  min-height: 100vh;
 }
 
-/* body {
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  left: 0;
-  right: 0;
-} */
-
-/* header {
-  height: 10vh;
-  flex: 1;
-  top: 0;
-} */
-
+header,
 main {
-  justify-content: space-between;
-  flex: 5;
+  padding: 0 25px 0 25px;
+}
+
+header {
+  max-height: 80px;
+}
+
+footer {
+  max-height: 80px;
 }
 
 img {
   max-width: 100%;
+  /* Construction */
+  height: 80px;
+  width: 160px;
 }
 
 .fit-cover {

@@ -1,11 +1,14 @@
-.vignette > img {
-    height: 40px;
-    width: 70px;
+.vignette-row {
+    justify-content: space-between;
+    align-items: center;
+    min-width: max-content;
 }
-/*
+
+
+
 .vignette {
-    padding: 1px;
-    margin: 4px;
+    padding: .25em;
+    margin: .25em;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -13,16 +16,26 @@
     background-color: white;
     align-items: flex-start;
     justify-content: flex-start;
+    min-width: max-content;
+    min-height: max-content;
 }
 
 .vignette > img {
-    object-fit: cover;
-    flex: 1;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    padding: 1px;
-    margin: 4px;
-    align-self: center;
+}
+
+.vignette-description {
+    padding: .25em;
+    margin: .25em;
+}
+
+.notation {
+    color: blue;
+}
+
+.negatif {
+    color: #f2f2f2;
 }
 
 .vignette--verticale > img {
@@ -31,100 +44,7 @@
     border-bottom-left-radius: 0;
 }
 
-.vignette_row {
-    flex: 1;
-    align-items: baseline;
+.vignette-description > h3,
+.vignette-description > p > strong {
+    font-weight: bold;
 }
-
-.vignette_hebergements {
-    flex: 1;
-}
-
-.vignette_hebergements > img  {
-    height: 50px;
-    width: 100px;
-}
-
-.vignette_promotions > img {
-    flex: 33%;
-    height: 20vh;
-}
-
-.vignette_activites {
-    flex: 1;
-} */
-
-/*.vignette {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-}
-
-.vignette > img {
-    object-fit: cover;
-    width: 100%;
-}
-
-.figcaption {
-    flex: 1 1 0;
-    justify-content: flex-start;
-    align-self: flex-start;
-}
-
-.vignette_hebergements {
-    flex: 33%;
-    height: 50%;
-}
-
-.vignette_hebergements > img {
-    height: 70%;
-}
-
-.vignette_promotions > img {
-    width: 30%;
-    height: 30vh;
-    justify-content: space-around;
-}
-
-.vignette_activites {
-    flex: 25%;
-}
-
-.vignette_activites > img {
-    height: 30vh;
-}
-
-.vignette--double > img {
-    height: 61vh;
-}
-
-.vignette--verticale {
-    flex-direction: column;
-}
-
-.vignette--double {
-    height: 100%;
-}
-
-TEST 1
-.vignette_hebergements {
-    flex: 33%;
-}
-
-.vignette--horizontale {
-    display: flex;
-}
-
-.vignette--horizontale > img {
-    flex: 1 1 0;
-}
-
-.vignette--horizontale > figcaption {
-    flex: 3 3 0;
-}
-
-.vignette--double {
-    min-height: 100vh;
-}
-*/

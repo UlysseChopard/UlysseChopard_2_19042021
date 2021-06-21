@@ -1,28 +1,52 @@
 .hebergements,
 .promotions,
 .activites {
-  padding: 25px;
-  margin: 25px;
-  border-radius: 25px;
+  padding: .75em;
+  margin: .75em;
+  border-radius: .75em;
 }
 
 .hebergements,
 .promotions {
   background-color: #f2f2f2;
+  min-height: max-content;
+  min-width: max-content;
 }
 
 .resultats-row {
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: flex-start;
 }
 
 .hebergements {
-  flex: 3;
+  flex: 2 1 0;
 }
+
+.hebergements .sous-titre,
+.contenu > p,
+.activites .sous-titre,
+.promotions .sous-titre {
+  padding: .25em;
+  margin: .25em;
+}
+
+.activites {
+  flex: 1 1 0;
+}
+
 
 .contenu {
   justify-content: space-around;
+}
+
+.contenu > * {
+  flex: 1;
+}
+
+/* Afficher plus */
+.contenu > p {
+  align-self: flex-start;
+  font-weight: bold;
 }
 
 .activites .contenu {
