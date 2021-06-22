@@ -1,50 +1,56 @@
 .vignette-row {
     justify-content: space-between;
     align-items: center;
-    min-width: max-content;
 }
 
 
 
 .vignette {
-    padding: .25em;
-    margin: .25em;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    padding: .25rem;
+    margin: .25rem;
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+    border-bottom-right-radius: .75rem;
     background-color: white;
-    align-items: flex-start;
-    justify-content: flex-start;
-    min-width: max-content;
-    min-height: max-content;
 }
 
-.vignette > img {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+.vignette-image > img {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+}
+
+.vignette-image {
+    flex: 1 0 50%;
 }
 
 .vignette-description {
-    padding: .25em;
-    margin: .25em;
+    flex: 1 1 50%;
+}
+
+.vignette-description {
+    padding: .25rem;
+    margin: .25rem;
 }
 
 .notation {
     color: blue;
 }
 
-.negatif {
+.notation-negatif {
     color: #f2f2f2;
 }
 
-.vignette--verticale > img {
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+.vignette-verticale .vignette-image  > img {
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
     border-bottom-left-radius: 0;
 }
 
-.vignette-description > h3,
-.vignette-description > p > strong {
+.vignette-description :not(p) {
     font-weight: bold;
+}
+
+.vignette-double img {
+    height: 65vh;
 }

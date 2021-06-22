@@ -1,22 +1,44 @@
+/* Positionnement */
 header {
   justify-content: space-between;
 }
 
 .logo {
-  flex: 2;
+  flex: 5;
 }
 
-.menu > ul {
+.menu-wrapper {
   justify-content: space-around;
   align-items: center;
 }
 
-.menu li {
+.menu {
+  justify-content: space-around;
+  height: 100%;
+}
+
+.inscription {
+  flex: initial;
+}
+
+.menu-item {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Apparence */
+.navigation-item {
   border-top: 2px solid transparent;
 }
 
-.menu li:hover {
+.navigation-item:hover {
   border-top-color: blue;
   color: blue;
+}
+
+.inscription {
+  color: blue;
+  font-weight: bold;
 }

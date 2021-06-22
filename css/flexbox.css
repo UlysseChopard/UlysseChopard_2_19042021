@@ -1,84 +1,30 @@
-/* Conteneurs */
-body,
-header,
-main,
-footer,
-ul,
-nav,
-.logo,
-.menu,
-.recherche,
-.resultats,
-.nav,
-.recherche-sous-titre,
-.champ-recherche,
-.nombre-resultats,
-.resultats-row,
-.colonne-footer,
-.champ,
-.filtres-wrapper,
-.hebergements,
-.promotions,
-.activites,
-.sous-titre,
-.contenu,
-.vignette-row,
-.vignette,
-.vignette-activites,
-.vignette-description {
+.flex-container {
   display: flex;
 }
 
 /* Conteneurs en colonne */
 
-body,
-main,
-.resultats,
-.menu,
-.recherche,
-.champ-recherche,
-.recherche-sous-titre,
-.hebergements,
-.promotions,
-.activites,
-.contenu,
-.vignette-description,
-.vignette--verticale,
-.vignette-activites,
-.colonne-footer,
-.colonne-footer > ul {
+.flex-column {
   flex-direction: column;
 }
 
 /* Valeurs flex standards */
 
 /* flex: 1 1 0 */
-body,
-main,
-header,
-footer,
-.menu,
-.menu > ul,
-footer > nav,
-.colonne-footer,
-.colonne-footer > *,
-.recherche-sous-titre,
-.resultats-row,
-.promotions,
-.activites {
-  flex: 1 1 0;
+.flex-1 {
+  flex: 1;
 }
 
 /* flex: 1 1 auto */
-.recherche {
+/* {
   flex: auto;
-}
+} */
 
 
 /* flex: 0 1 auto */
-.vignette {
-  flex: none;
-}
+/* {
+  flex: initial;
+} */
 
 
 /*
@@ -89,26 +35,3 @@ flex: 0 0 auto
 */
 
 /* Disposition des elements */
-
-/* Centrage */
-/* main,
-header,
-.menu > ul,
-footer > nav,
-.colonne-footer,
-.champ,
-.filtres-wrapper,
-.filtres-wrapper > *,
-.nombre-resultats,
-.contenu,
-.sous-titre {
-  align-items: stretch;
-} */
-
-/* footer > nav,
-.colonne-footer > ul,
-.champ,
-.filtres-wrapper > *,
-.nombre-resultats {
-  justify-content: flex-start;
-} */

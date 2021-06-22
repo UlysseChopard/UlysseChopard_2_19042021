@@ -27,290 +27,329 @@
       content="Cette page est un exercice d'intégration d'une maquette pour un site de réservation de voyages"
     />
   </head>
-  <body>
-    <header>
+  <body class="flex-container flex-column flex-1">
+    <header class="flex-container flex-1">
       <div class="logo">
         <img src="./images/logo/Reservia.svg" />
       </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="#hebergements">Hébergements</a></li>
-          <li><a href="#activites">Activités</a></li>
-          <li><a href="#">S'inscrire</a></li>
+      <nav class="menu-wrapper flex-container flex-1">
+        <ul class="menu navigation flex-container flex-1">
+          <li class="menu-item navigation-item"><a href="#hebergements">Hébergements</a></li>
+          <li class="menu-item navigation-item"><a href="#activites">Activités</a></li>
+        </ul>
+      </nav>
+      <nav class="menu-wrapper inscription flex-container flex-1">
+        <ul class="menu inscription flex-container flex-1">
+          <li class="menu-item inscription-item"><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="recherche">
-        <div class="recherche-sous-titre">
+    <main class="flex-container flex-column flex-1">
+      <section class="recherche flex-container flex-column">
+        <div class="recherche titre flex-1 flex-container flex-column">
           <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
           <p>En plein centre-ville ou en pleine nature</p>
         </div>
-        <form class="champ-recherche">
-          <div class="champ">
+        <form class="champ-recherche flex-container flex-column">
+          <div class="champ flex-container">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" placeholder="Marseille, France" />
             <button type="submit" value="Rechercher">Rechercher</button>
           </div>
-          <menu class="filtres-wrapper">
-            <div class="sous-titre">
+          <menu flex-1 class="filtres-wrapper flex-container">
+            <div class="titre">
               <h3>Filtres</h3>
             </div>
-            <ul class="filtres">
-              <li class="filtre">
-                <i class="fas fa-money-bill-wave fa-fw"></i> Economique
+            <ul class="filtres flex-container">
+              <li class="filtre-item flex-container">
+                <i class="fas fa-money-bill-wave fa-fw"></i> <p>Economique</p>
               </li>
-              <li class="filtre">
-                <i class="fas fa-child fa-fw"></i> Familial
+              <li class="filtre-item flex-container">
+                <i class="fas fa-child fa-fw"></i> <p>Familial</p>
               </li>
-              <li class="filtre">
-                <i class="fas fa-heart fa-fw"></i> Romantique
+              <li class="filtre-item flex-container">
+                <i class="fas fa-heart fa-fw"></i> <p>Romantique</p>
               </li>
-              <li class="filtre">
-                <i class="fas fa-dog fa-fw"></i> Animaux autorisés
+              <li class="filtre-item flex-container">
+                <i class="fas fa-dog fa-fw"></i> <p>Animaux autorisés</p>
               </li>
             </ul>
-          </menu>
+          </menu flex-1>
         </form>
-        <div class="nombre-resultats">
+        <div class="nombre-resultats flex-container">
           <i class="fas fa-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </section>
-      <section class="resultats">
-        <div class="resultats-row">
-          <article class="hebergements" id="hebergements">
-            <div class="sous-titre">
+      <section class="resultats flex-container flex-column">
+        <div class="resultats-row flex-1 flex-container">
+          <article class="hebergements flex-container flex-column" id="hebergements">
+            <div class="titre flex-container">
               <h3>Hébergements à Marseille</h3>
             </div>
-            <div class="contenu">
-              <div class="vignette-row">
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/hebergements/4_small/auberge-de-la-cannebiere.jpg"
-                    alt="Auberge la Cannebière"
-                  />
-                  <div class="vignette-description">
+            <div class="contenu flex-1 flex-container flex-column">
+              <div class="vignette-row flex-container">
+                <div class="vignette flex-1 vignette-verticale flex-column vignette-hebergements flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="./images/hebergements/4_small/auberge-de-la-cannebiere.jpg"
+                      alt="Auberge la Cannebière"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-container flex-column">
                     <h3>Auberge la Cannebière</h3>
                     <p>Nuit à partir de <strong>25&euro;</strong></p>
-                    <div class="notation">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star negatif"></i>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation notation-negatif"></i>
                     </div>
                   </div>
                 </div>
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/hebergements/4_small/hotel-du-port.jpg"
-                    alt="Hotel du port"
-                  />
-                  <div class="vignette-description">
+                <div class="vignette flex-1 vignette-verticale flex-column vignette-hebergements flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/hebergements/4_small/hotel-du-port.jpg"
+                      alt="Hotel du port"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-container flex-column">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 52&euro;</p>
-                    <div class="notation">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
                     </div>
                   </div>
                 </div>
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/hebergements/4_small/hotel-les-mouettes.jpg"
-                    alt="Hôtel Les mouettes"
-                  />
-                  <div class="vignette-description">
+                <div class="vignette flex-1 vignette-verticale flex-column vignette-hebergements flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/hebergements/4_small/hotel-les-mouettes.jpg"
+                      alt="Hôtel Les mouettes"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-container flex-column">
                     <h3>Hôtel Les mouettes</h3>
                     <p>Nuit à partir de 76&euro;</p>
-                    <div class="notation">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star negatif"></i>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation notation-negatif"></i>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="vignette-row">
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/hebergements/4_small/hotel-de-la-mer.jpg"
-                    alt="Hôtel de la mer"
-                  />
-                  <div class="vignette-description">
+              <div class="vignette-row flex-container">
+                <div class="vignette flex-1 vignette-verticale flex-column vignette-hebergements flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/hebergements/4_small/hotel-de-la-mer.jpg"
+                      alt="Hôtel de la mer"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-container flex-column">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de 46&euro;</p>
-                    <div class="notation">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star negatif"></i>
-                      <i class="fas fa-star negatif"></i>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation notation-negatif"></i>
+                      <i class="fas fa-star notation notation-negatif"></i>
                     </div>
                   </div>
                 </div>
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/hebergements/4_small/auberge-le-panier.jpg"
-                    alt="Auberge Le Panier"
-                  />
-                  <div class="vignette-description">
+                <div class="vignette flex-1 vignette-verticale flex-column vignette-hebergements flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/hebergements/4_small/auberge-le-panier.jpg"
+                      alt="Auberge Le Panier"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-container flex-column">
                     <h3>Auberge Le Panier</h3>
                     <p>Nuit à partir de <strong>23&euro;</strong></p>
-                    <div class="notation">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star negatif"></i>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation notation-negatif"></i>
                     </div>
                   </div>
                 </div>
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/hebergements/4_small/hotel-chez-amina.jpg"
-                    alt="Hôtel chez Amina"
-                  />
-                  <div class="vignette-description">
+                <div class="vignette flex-1 vignette-verticale flex-column vignette-hebergements flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/hebergements/4_small/hotel-chez-amina.jpg"
+                      alt="Hôtel chez Amina"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-container flex-column">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de 96&euro;</p>
-                    <div class="notation">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
+                      <i class="fas fa-star notation"></i>
                     </div>
                   </div>
                 </div>
               </div>
-              <p><a href="#">Afficher plus</a></p>
+              <div class="btn-affiche">
+                <p><a href="#">Afficher plus</a></p>
+              </div>
             </div>
           </article>
-          <article class="promotions" id="promotions">
-            <div class="sous-titre">
+          <article class="promotions flex-1 flex-container flex-column" id="promotions">
+            <div class="titre flex-container">
               <h3>Les plus populaires</h3>
               <i class="fas fa-chart-line"></i>
             </div>
-            <div class="contenu">
-              <div class="vignette">
-                <img
-                  class="fit-cover"
-                  src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg"
-                  alt="Hotel Le soleil du matin"
-                />
-                <div class="vignette-description">
+            <div class="contenu flex-1 flex-container flex-column">
+              <div class="vignette flex-1 vignette-promotions flex-container">
+                <div class="vignette-image flex-1"> 
+                  <img
+                      class="fit-cover"
+                      src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg"
+                      alt="Hotel Le soleil du matin"
+                    />
+                </div>
+                <div class="vignette-description flex-1 flex-container flex-column">
                   <h3>Hôtel Le soleil du matin</h3>
                   <p>Nuit à partir de 128&euro;</p>
+                  <div class="notation-wrapper flex-container">Notation</div>
                 </div>
               </div>
-              <div class="vignette">
-                <img
-                  class="fit-cover"
-                  src="images/hebergements/4_small/au-coeur-de-l-eau.jpg"
-                  alt="Au coeur de l'eau Chambres d'hôtes"
-                />
-                <div class="vignette-description">
+              <div class="vignette flex-1 vignette-promotions flex-container">
+                <div class="vignette-image flex-1">
+                  <img
+                    class="fit-cover"
+                    src="images/hebergements/4_small/au-coeur-de-l-eau.jpg"
+                    alt="Au coeur de l'eau Chambres d'hôtes"
+                  />
+                </div>
+                <div class="vignette-description flex-1 flex-container flex-column">
                   <h3>Au coeur de l'eau<br />Chambres d'hôtes</h3>
                   <p>Nuit à partir de 71&euro;</p>
+                  <div class="notation-wrapper flex-container">Notation</div>
                 </div>
               </div>
-              <div class="vignette">
-                <img
-                  class="fit-cover"
-                  src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg"
-                  alt="Hotel Tout bleu et Blanc"
-                />
-                <div class="vignette-description">
+              <div class="vignette flex-1 vignette-promotions flex-container">
+                <div class="vignette-image flex-1">
+                  <img
+                    class="fit-cover vignette-image flex-1"
+                    src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg"
+                    alt="Hotel Tout bleu et Blanc"
+                  />
+                </div>
+                <div class="vignette-description flex-1 flex-container flex-column">
                   <h3>Hôtel Tout bleu et Blanc</h3>
                   <p>Nuit à partir de 68&euro;</p>
+                  <div class="notation-wrapper flex-container">Notation</div>
                 </div>
               </div>
             </div>
           </article>
         </div>
-        <div class="resultats-row">
-          <article class="activites" id="activites">
-            <div class="sous-titre">
+        <div class="resultats-row flex-1 flex-container">
+          <article class="activites flex-1 flex-container flex-column" id="activites">
+            <div class="titre">
               <h3>Activités à Marseille</h3>
             </div>
-            <div class="contenu">
-              <div class="vignette-activites">
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/activites/4_small/vieux-port.jpg"
-                    alt="Vieux Port"
-                  />
-                  <div class="vignette-description">
+            <div class="contenu flex-1 flex-container flex-column">
+              <div class="vignette-activites flex-column vignette-double flex-container">
+                <div class="vignette flex-1 vignette-verticale flex-column flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/activites/4_small/vieux-port.jpg"
+                      alt="Vieux Port"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-column">
                     <h3>Vieux Port</h3>
                   </div>
                 </div>
               </div>
-              <div class="vignette-activites vignette--double">
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/activites/4_small/fort-de-pomegues.jpg"
-                    alt="Fort de Pomegues"
-                  />
-                  <div class="vignette-description">
+              <div class="vignette-activites flex-column flex-container">
+                <div class="vignette flex-1 vignette-verticale flex-column flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/activites/4_small/fort-de-pomegues.jpg"
+                      alt="Fort de Pomegues"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-column">
                     <h3>Fort de Pomègues</h3>
                   </div>
                 </div>
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/activites/4_small/iles-du-frioul.jpg"
-                    alt="Iles du Frioul"
-                  />
-                  <div class="vignette-description">
+                <div class="vignette flex-1 vignette-verticale flex-column flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/activites/4_small/iles-du-frioul.jpg"
+                      alt="Iles du Frioul"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-column">
                     <h3>Îles du Frioul</h3>
                   </div>
                 </div>
               </div>
-              <div class="vignette-activites">
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/activites/4_small/parc-national-des-calanques.jpg"
-                    alt="Parc National des Calanques"
-                  />
-                  <div class="vignette-description">
+              <div class="vignette-activites flex-column vignette-double flex-container">
+                <div class="vignette flex-1 vignette-verticale flex-column flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/activites/4_small/parc-national-des-calanques.jpg"
+                      alt="Parc National des Calanques"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-column">
                     <h3>Parc National des Calanques</h3>
                   </div>
                 </div>
               </div>
-              <div class="vignette-activites vignette--double">
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/activites/4_small/nd-de-la-garde.jpg"
-                    alt="Notre-Dame-de-la-Garde"
-                  />
-                  <div class="vignette-description">
+              <div class="vignette-activites flex-column flex-container">
+                <div class="vignette flex-1 vignette-verticale flex-column flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/activites/4_small/nd-de-la-garde.jpg"
+                      alt="Notre-Dame-de-la-Garde"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-column">
                     <h3>Notre-Dame-de-la-Garde</h3>
                   </div>
                 </div>
-                <div class="vignette vignette--verticale">
-                  <img
-                    class="fit-cover"
-                    src="images/activites/4_small/parc-longchamp.jpg"
-                    alt="Parc Longchamp"
-                  />
-                  <div class="vignette-description">
+                <div class="vignette flex-1 vignette-verticale flex-column flex-container">
+                  <div class="vignette-image flex-1">
+                    <img
+                      class="fit-cover"
+                      src="images/activites/4_small/parc-longchamp.jpg"
+                      alt="Parc Longchamp"
+                    />
+                  </div>
+                  <div class="vignette-description flex-1 flex-column">
                     <h3>Parc Longchamp</h3>
                   </div>
                 </div>
@@ -320,28 +359,28 @@
         </div>
       </section>
     </main>
-    <footer>
-      <nav>
-        <div class="colonne-footer">
-          <p>A propos</p>
-          <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
+    <footer class="flex-container flex-1">
+      <nav class="footer-nav flex-1 flex-container">
+        <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
+          <p class="colonne-footer titre">A propos</p>
+          <ul class="colonne-footer flex-1 flex-column flex-container">
+            <li class="colonne-footer-item flex-1">Fonctionnement du site</li>
+            <li class="colonne-footer-item flex-1">Conditions générales de vente</li>
+            <li class="colonne-footer-item flex-1">Données et confidentialité</li>
           </ul>
         </div>
-        <div class="colonne-footer">
-          <p>Nos hébergements</p>
-          <ul>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
+        <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
+          <p class="colonne-footer titre">Nos hébergements</p>
+          <ul class="colonne-footer flex-1 flex-column flex-container">
+            <li class="colonne-footer-item flex-1">Charte qualité</li>
+            <li class="colonne-footer-item flex-1">Soumettre votre hôtel</li>
           </ul>
         </div>
-        <div class="colonne-footer">
-          <p>Assistance</p>
-          <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
+        <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
+          <p class="colonne-footer titre">Assistance</p>
+          <ul class="colonne-footer flex-1 flex-column flex-container">
+            <li class="colonne-footer-item flex-1">Centre d'aide</li>
+            <li class="colonne-footer-item flex-1">Nous contacter</li>
           </ul>
         </div>
       </nav>

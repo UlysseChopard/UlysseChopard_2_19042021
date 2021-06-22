@@ -1,50 +1,39 @@
 .hebergements,
 .promotions,
 .activites {
-  padding: .75em;
-  margin: .75em;
-  border-radius: .75em;
+  padding: .75rem;
+  margin: .75rem;
+  border-radius: .75rem;
 }
 
 .hebergements,
 .promotions {
   background-color: #f2f2f2;
-  min-height: max-content;
-  min-width: max-content;
-}
-
-.resultats-row {
-  flex-wrap: nowrap;
-  justify-content: space-around;
 }
 
 .hebergements {
-  flex: 2 1 0;
+  flex: 2;
 }
 
-.hebergements .sous-titre,
+.promotions {
+  flex: 1;
+}
+
+.hebergements > .titre,
 .contenu > p,
-.activites .sous-titre,
-.promotions .sous-titre {
-  padding: .25em;
-  margin: .25em;
-}
-
-.activites {
-  flex: 1 1 0;
+.activites > .titre,
+.promotions > .titre {
+  padding: .25rem;
+  margin: .25rem;
 }
 
 
 .contenu {
-  justify-content: space-around;
-}
-
-.contenu > * {
-  flex: 1;
+  justify-content: space-between;
 }
 
 /* Afficher plus */
-.contenu > p {
+.btn-affiche {
   align-self: flex-start;
   font-weight: bold;
 }
@@ -53,6 +42,6 @@
   flex-direction: row;
 }
 
-.sous-titre {
+.titre {
   justify-content: space-between;
 }

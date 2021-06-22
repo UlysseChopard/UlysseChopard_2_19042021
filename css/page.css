@@ -11,7 +11,7 @@
 
 header,
 main {
-  padding: 0 25px 0 25px;
+  padding: 0 3rem;
 }
 
 header {
@@ -22,13 +22,13 @@ footer {
   max-height: 80px;
 }
 
-img {
-  max-width: 100%;
-  /* Construction */
-  height: 80px;
-  width: 160px;
+.fit-cover {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
-.fit-cover {
-  object-fit: cover;
+.titre {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
