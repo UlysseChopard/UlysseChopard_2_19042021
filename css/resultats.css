@@ -1,8 +1,11 @@
 .hebergements,
-.promotions,
-.activites {
+.promotions {
   padding: .75rem;
   margin: .75rem;
+  border-radius: .75rem;
+}
+
+.activites {
   border-radius: .75rem;
 }
 

@@ -5,13 +5,13 @@
 footer > nav {
   background-color: #f2f2f2;
   padding: 0 3rem;
-  }
+}
 
-  .colonne-footer {
-    justify-content: center;
-  }
+.colonne-footer {
+  justify-content: center;
+}
 
-  .colonne-footer-item {
-    flex: 1;
-    justify-self: flex-start;
-  }
+.colonne-footer-item {
+  flex: 1;
+  justify-self: flex-start;
+}

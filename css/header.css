@@ -1,6 +1,7 @@
 /* Positionnement */
 header {
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -10,14 +11,16 @@ header {
 .menu-wrapper {
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 
 .menu {
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
 }
 
 .inscription {
+  justify-content: flex-end;
   flex: initial;
 }
 
