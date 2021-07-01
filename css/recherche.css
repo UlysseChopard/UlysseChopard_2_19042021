@@ -1,15 +1,68 @@
 .recherche-wrapper {
   flex: auto;
-  height: 20vh;
+  padding: 2rem 1rem;
+}
+
+.champ {
+  padding: 1rem 0;
+}
+
+.champ-icone {
+  border-top-left-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+  padding: 1rem 2rem;
+  background-color: lightblue;
+  height: 1.2rem;
+}
+
+.champ > button {
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+  border-top-right-radius: .75rem;
+  border-bottom-right-radius: .75rem;
+  background-color: blue;
 }
 
 .recherche .titre-wrapper {
   justify-content: space-evenly;
 }
 
+.recherche-item, .recherche-titre {
+  padding: 0 0 1rem 0;
+}
+
+.recherche-titre {
+  font-weight: bold;
+}
+
 .filtres-wrapper {
+  flex: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.filtre-titre {
+  flex: 0 0 10%;
+}
+
+.filtres {
+  align-self: flex-start;
+  flex: 0 0 50%;
+}
+
+.filtre {
   flex: auto;
   align-items: center;
+  justify-content: flex-start;
+}
+
+.filtre-item {
+  display: inline-flex;
+  flex: 1;
+  justify-content: center;
 }
 
 .champ-recherche-wrapper {
@@ -18,61 +71,26 @@
 }
 
 .champ-icone {
-  background-color: #f2f2f2;
+  background-color: lightblue;
 }
-
- /* .recherche > .titre {
-    justify-content: space-around;
-  }
-
-  .titre {
-    font-weight: bolder;
-  }
-  
-  .champ-icone {
-    background-color: #f2f2f2;
-    min-width: 25px;
-  }
-
-  .champ input[type="search"] {
-    flex: 0 1 20%;
-    min-width: 100px;
-  }
-  
-  .champ > button {
-    flex: 0 1 15%;
-    min-width: 100px;
-  }
-   */
-
-  /* .filtres-wrapper {
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .filtres-wrapper > .titre {
-    flex: 1 1;
-    align-self: center;
-  }
-  
-  .filtres {
-    flex: auto;
-  }
-
-  .filtre-item {
-    flex-wrap: nowrap;
-  } */
 
   .filtre-icone {
     color: blue;
-    
+    padding: .50rem;
+    background-color: lightblue;
+    border-radius: inherit;
+  }
+
+  .filtre {
+    border: 1.5px solid #f2f2f2;
+    border-radius: 1rem;
   }
   
   .nombre-resultats {
     display: inline-flex;
     flex: 0 0 40%;
     align-items: center;
+    padding: 1rem 0;
   }
   
   /* Cercle autour du point d'exclamation */
@@ -81,8 +99,8 @@
     height: 1em;
     border: 1.5px solid #F2F2F2;
     border-radius: 50%;
-    padding: .5rem;
-    margin: .5rem;
+    padding: .25rem;
+    margin: 0 .25rem 0 0;
     color: blue;
     font-weight: 500;
   }
