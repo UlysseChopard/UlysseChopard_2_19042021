@@ -4,7 +4,7 @@ header {
   align-items: center;
   height: 100%;
   min-height: 10vh;
-  padding: 2rem 5rem;
+  padding: 0 5rem;
 }
 
 .logo {
@@ -45,11 +45,11 @@ header {
 }
 
 .navigation-item:hover {
-  border-top-color: blue;
-  color: blue;
+  border-top-color: #0065FC;
+  color: #0065FC;
 }
 
 .inscription {
-  color: blue;
+  color: #0065FC;
   font-weight: bold;
 }

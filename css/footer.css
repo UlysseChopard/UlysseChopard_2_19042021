@@ -1,17 +1,18 @@
 .footer {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 footer > nav {
   background-color: #f2f2f2;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
+  min-height: 25vh;
 }
 
 .colonne-footer {
-  justify-content: center;
+  justify-content: space-evenly;
+  flex: auto;
 }
 
 .colonne-footer-item {
-  flex: 1;
-  justify-self: flex-start;
+  flex: auto;
 }

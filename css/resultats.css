@@ -48,3 +48,7 @@
 .titre {
   justify-content: space-between;
 }
+
+a.vignette {
+  display: flex;
+}
