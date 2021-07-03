@@ -14,12 +14,13 @@ header {
 .menu-wrapper {
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  min-height: inherit;
 }
 
 .menu {
   justify-content: space-evenly;
-  height: 100%;
+  align-items: center;
+  min-height: inherit;
 }
 
 .inscription {
@@ -31,11 +32,8 @@ header {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-}
-
-.menu-item > a {
-  height: 100%;
+  min-height: inherit;
+  padding: 0 1rem;
 }
 
 /* Apparence */

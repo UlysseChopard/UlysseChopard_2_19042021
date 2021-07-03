@@ -10,7 +10,7 @@ footer > nav {
 
 .colonne-footer {
   justify-content: space-evenly;
-  flex: auto;
+  padding: .5rem 0;
 }
 
 .colonne-footer-item {
