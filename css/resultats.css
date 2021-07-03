@@ -52,3 +52,7 @@
 a.vignette {
   display: flex;
 }
+
+.grande-police {
+  font-size: 1.3rem;
+}
