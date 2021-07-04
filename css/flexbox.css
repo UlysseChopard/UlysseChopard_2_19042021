@@ -16,9 +16,9 @@
 }
 
 /* flex: 1 1 auto */
-/* {
+.flex-auto {
   flex: auto;
-} */
+}
 
 
 /* flex: 0 1 auto */

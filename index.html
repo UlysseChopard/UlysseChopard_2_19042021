@@ -4,8 +4,11 @@
     <title>Reservia</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Base URL à la racine -->
+    <base href="/">
 
-    <link rel="stylesheet" type="text/css" media="all" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,7 +33,7 @@
   <body class="flex-container flex-column flex-1">
     <header class="flex-container">
       <div class="logo">
-        <img src="./images/logo/Reservia.svg" />
+        <img alt="logo entreprise Reservia" src="images/logo/Reservia.svg" />
       </div>
       <nav class="menu-wrapper flex-container flex-1">
         <ul class="menu navigation flex-container flex-1">
@@ -72,10 +75,8 @@
             </button>
           </div>
           <menu class="filtres-wrapper flex-container">
-            <div class="filtre-titre">
-              <h3>Filtres</h3>
-            </div>
-            <ul class="filtres flex-container">
+            <li class="filtre-titre">Filtres</li>
+            <li class="filtres flex-container">
               <a href="#" class="filtre flex-container">
                 <i class="fas fa-money-bill-wave fa-fw filtre-icone"></i>
                 <p class="filtre-item">Economique</p>
@@ -92,7 +93,7 @@
                 <i class="fas fa-dog fa-fw filtre-icone"></i>
                 <p class="filtre-item">Animaux autorisés</p>
               </a>
-            </ul>
+            </li>
           </menu>
         </form>
         <div class="nombre-resultats flex-container">
@@ -103,6 +104,7 @@
         </div>
       </section>
       <section class="resultats-wrapper flex-container flex-column">
+        <h3 class="invisible">Resultats de la recherche de logement</h3>
         <div class="resultats flex-1 flex-container">
           <article
             class="resultats-item hebergements flex-container flex-column"
@@ -111,426 +113,302 @@
             <div class="titre flex-container">
               <h3 class="grande-police">Hébergements à Marseille</h3>
             </div>
-            <div class="contenu flex-1 flex-container flex-column">
-              <div class="vignette-row flex-1 flex-container">
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column
-                    vignette-hebergements
-                    flex-container
-                  "
-                  href="#"
-                >
-                  <div class="vignette-image flex-1">
+            <div class="contenu vignette-verticale flex-1 flex-container flex-column">
+              <div class="vignette-row flex-container flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/hebergements/4_small/auberge-de-la-cannebiere.jpg"
+                      class="fit-cover vignette-image"
+                      src="images/hebergements/4_small/auberge-de-la-cannebiere.jpg"
                       alt="Auberge la Cannebière"
                     />
-                  </div>
-                  <div class="vignette-description flex-container flex-column">
-                    <h3>Auberge la Cannebière</h3>
-                    <p>Nuit à partir de <strong>25&euro;</strong></p>
-                    <div class="notation-wrapper flex-container">
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Auberge la Cannebière</h3>
+                      <p>Nuit à partir de <strong>25&euro;</strong></p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i
                         class="fas fa-star notation-icone notation-negatif"
-                      ></i>
-                    </div>
-                  </div>
+                        ></i>
+                      </figcaption>
+                    </figure>
                 </a>
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column
-                    vignette-hebergements
-                    flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/hebergements/4_small/hotel-du-port.jpg"
+                      class="fit-cover vignette-image"
+                      src="images/hebergements/4_small/hotel-du-port.jpg"
                       alt="Hotel du port"
                     />
-                  </div>
-                  <div class="vignette-description flex-container flex-column">
-                    <h3>Hôtel du port</h3>
-                    <p>Nuit à partir de 52&euro;</p>
-                    <div class="notation-wrapper flex-container">
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                    </div>
-                  </div>
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Hôtel du port</h3>
+                      <p>Nuit à partir de 52&euro;</p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </a>
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column
-                    vignette-hebergements
-                    flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/hebergements/4_small/hotel-les-mouettes.jpg"
+                      class="fit-cover vignette-image"
+                      src="images/hebergements/4_small/hotel-les-mouettes.jpg"
                       alt="Hôtel Les mouettes"
                     />
-                  </div>
-                  <div class="vignette-description flex-container flex-column">
-                    <h3>Hôtel Les mouettes</h3>
-                    <p>Nuit à partir de 76&euro;</p>
-                    <div class="notation-wrapper flex-container">
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Hôtel Les mouettes</h3>
+                      <p>Nuit à partir de 76&euro;</p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i
                         class="fas fa-star notation-icone notation-negatif"
-                      ></i>
-                    </div>
-                  </div>
+                        ></i>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </a>
               </div>
               <div class="vignette-row flex-1 flex-container">
-                <a
-                  href="#"
-                  class="
-                    vignette vignette-verticale
-                    flex-column
-                    vignette-hebergements
-                    flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/hebergements/4_small/hotel-de-la-mer.jpg"
+                      class="fit-cover vignette-image"
+                      src="images/hebergements/4_small/hotel-de-la-mer.jpg"
                       alt="Hôtel de la mer"
                     />
-                  </div>
-                  <div class="vignette-description flex-container flex-column">
-                    <h3>Hôtel de la mer</h3>
-                    <p>Nuit à partir de 46&euro;</p>
-                    <div class="notation-wrapper flex-container">
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Hôtel de la mer</h3>
+                      <p>Nuit à partir de 46&euro;</p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i
                         class="fas fa-star notation-icone notation-negatif"
-                      ></i>
-                      <i
+                        ></i>
+                        <i
                         class="fas fa-star notation-icone notation-negatif"
-                      ></i>
-                    </div>
-                  </div>
+                        ></i>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </a>
-                <a
-                  href="#"
-                  class="
-                    vignette vignette-verticale
-                    flex-column
-                    vignette-hebergements
-                    flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="images/hebergements/4_small/auberge-le-panier.jpg"
-                      alt="Auberge Le Panier"
+                    class="fit-cover vignette-image"
+                    src="images/hebergements/4_small/auberge-le-panier.jpg"
+                    alt="Auberge Le Panier"
                     />
-                  </div>
-                  <div class="vignette-description flex-container flex-column">
-                    <h3>Auberge Le Panier</h3>
-                    <p>Nuit à partir de <strong>23&euro;</strong></p>
-                    <div class="notation-wrapper flex-container">
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Auberge Le Panier</h3>
+                      <p>Nuit à partir de <strong>23&euro;</strong></p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i
                         class="fas fa-star notation-icone notation-negatif"
-                      ></i>
-                    </div>
-                  </div>
+                        ></i>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </a>
-                <a
-                  href="#"
-                  class="
-                    vignette vignette-verticale
-                    flex-column
-                    vignette-hebergements
-                    flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/hebergements/4_small/hotel-chez-amina.jpg"
-                      alt="Hôtel chez Amina"
+                    class="fit-cover vignette-image"
+                    src="images/hebergements/4_small/hotel-chez-amina.jpg"
+                    alt="Hôtel chez Amina"
                     />
-                  </div>
-                  <div class="vignette-description flex-container flex-column">
-                    <h3>Hôtel chez Amina</h3>
-                    <p>Nuit à partir de 96&euro;</p>
-                    <div class="notation-wrapper flex-container">
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                      <i class="fas fa-star notation-icone"></i>
-                    </div>
-                  </div>
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Hôtel chez Amina</h3>
+                      <p>Nuit à partir de 96&euro;</p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </a>
               </div>
             </div>
-            <div class="btn-affiche">
-              <p><a href="#">Afficher plus</a></p>
-            </div>
+            <p class="btn-affiche"><a href="#">Afficher plus</a></p>
           </article>
           <article
-            class="resultats-item promotions flex-1 flex-container flex-column"
-            id="promotions"
+          class="resultats-item promotions flex-1 flex-container flex-column"
+          id="promotions"
           >
             <div class="titre flex-container">
               <h3 class="grande-police">Les plus populaires</h3>
               <i class="fas fa-chart-line promotions-icone"></i>
             </div>
             <div class="contenu flex-1 flex-container flex-column">
-              <a href="#" class="vignette vignette-promotions flex-container">
-                <div class="vignette-image">
+              <a href="#" >
+                <figure class="vignette flex-container flex-1">
                   <img
-                    class="fit-cover"
-                    src="./images/hebergements/4_small/hotel-le-soleil-du-matin.jpg"
+                  class="fit-cover vignette-image"
+                  src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg"
                     alt="Hotel Le soleil du matin"
-                  />
-                </div>
-                <div class="vignette-description flex-container flex-column">
-                  <h3>Hôtel Le soleil du matin</h3>
-                  <p>Nuit à partir de 128&euro;</p>
-                  <div class="notation-wrapper flex-container">
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="vignette vignette-promotions flex-container">
-                <div class="vignette-image">
+                    />
+                    <figcaption class="vignette-description flex-container flex-column flex-1">
+                      <h3>Hôtel Le soleil du matin</h3>
+                      <p>Nuit à partir de 128&euro;</p>
+                      <div class="notation-wrapper flex-container">
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                        <i class="fas fa-star notation-icone"></i>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </a>
+                <a href="#">
+                  <figure class="vignette flex-container flex-1">
                   <img
-                    class="fit-cover"
-                    src="./images/hebergements/4_small/au-coeur-de-l-eau.jpg"
-                    alt="Au coeur de l'eau Chambres d'hôtes"
+                  class="fit-cover vignette-image"
+                  src="images/hebergements/4_small/au-coeur-de-l-eau.jpg"
+                  alt="Au coeur de l'eau Chambres d'hôtes"
                   />
-                </div>
-                <div class="vignette-description flex-container flex-column">
-                  <h3>Au coeur de l'eau<br />Chambres d'hôtes</h3>
-                  <p>Nuit à partir de 71&euro;</p>
-                  <div class="notation-wrapper flex-container">
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i
+                  <figcaption class="vignette-description flex-container flex-column flex-1">
+                    <h3>Au coeur de l'eau<br />Chambres d'hôtes</h3>
+                    <p>Nuit à partir de 71&euro;</p>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation-icone"></i>
+                      <i class="fas fa-star notation-icone"></i>
+                      <i class="fas fa-star notation-icone"></i>
+                      <i class="fas fa-star notation-icone"></i>
+                      <i
                       class="fas fa-star notation-icone notation-negatif"
-                    ></i>
-                  </div>
-                </div>
+                      ></i>
+                    </div>
+                  </figcaption>
+                </figure>
               </a>
-              <a href="#" class="vignette vignette-promotions flex-container">
-                <div class="vignette-image">
+              <a href="#">
+                <figure class="vignette flex-container flex-1">
                   <img
-                    class="fit-cover vignette-image"
-                    src="./images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg"
-                    alt="Hotel Tout bleu et Blanc"
+                  class="fit-cover vignette-image"
+                  src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg"
+                  alt="Hotel Tout bleu et Blanc"
                   />
-                </div>
-                <div class="vignette-description flex-container flex-column">
-                  <h3>Hôtel Tout bleu et Blanc</h3>
-                  <p>Nuit à partir de 68&euro;</p>
-                  <div class="notation-wrapper flex-container">
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i class="fas fa-star notation-icone"></i>
-                    <i
+                  <figcaption class="vignette-description flex-container flex-column flex-1">
+                    <h3>Hôtel Tout bleu et Blanc</h3>
+                    <p>Nuit à partir de 68&euro;</p>
+                    <div class="notation-wrapper flex-container">
+                      <i class="fas fa-star notation-icone"></i>
+                      <i class="fas fa-star notation-icone"></i>
+                      <i class="fas fa-star notation-icone"></i>
+                      <i class="fas fa-star notation-icone"></i>
+                      <i
                       class="fas fa-star notation-icone notation-negatif"
-                    ></i>
-                  </div>
-                </div>
+                      ></i>
+                    </div>
+                  </figcaption>
+                </figure>
               </a>
             </div>
           </article>
         </div>
         <div class="resultats flex-1 flex-container">
           <article
-            class="activites flex-1 flex-container flex-column"
-            id="activites"
+          class="activites flex-container flex-column flex-1"
+          id="activites"
           >
             <div class="titre">
               <h3 class="grande-police">Activités à Marseille</h3>
             </div>
-            <div class="contenu flex-1 flex-container flex-column">
-              <div
-                class="
-                  vignette-activites
-                  flex-column
-                  vignette-double
-                  flex-container
-                "
-              >
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
-                    <img
-                      class="fit-cover"
-                      src="./images/activites/4_small/vieux-port.jpg"
-                      alt="Vieux Port"
-                    />
-                  </div>
-                  <div class="vignette-description flex-column">
+            <div class="contenu vignette-verticale flex-container">
+              <a href="#">
+                <figure class="vignette flex-container flex-column flex-1">
+                  <img
+                  class="fit-cover vignette-image flex-1"
+                  src="images/activites/4_small/vieux-port.jpg"
+                  alt="Vieux Port"
+                  />
+                  <figcaption class="vignette-description">
                     <h3>Vieux Port</h3>
-                  </div>
-                </a>
-              </div>
-              <div class="vignette-activites flex-column flex-container">
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="vignette-double flex-container flex-column">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/activites/4_small/fort-de-pomegues.jpg"
-                      alt="Fort de Pomegues"
+                    class="fit-cover vignette-image flex-1"
+                    src="images/activites/4_small/fort-de-pomegues.jpg"
+                    alt="Fort de Pomegues"
                     />
-                  </div>
-                  <div class="vignette-description flex-column">
-                    <h3>Fort de Pomègues</h3>
-                  </div>
+                    <figcaption class="vignette-description">
+                      <h3>Fort de Pomègues</h3>
+                    </figcaption>
+                </figure>
                 </a>
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/activites/4_small/iles-du-frioul.jpg"
+                      class="fit-cover vignette-image flex-1"
+                      src="images/activites/4_small/iles-du-frioul.jpg"
                       alt="Iles du Frioul"
                     />
-                  </div>
-                  <div class="vignette-description flex-column">
-                    <h3>Îles du Frioul</h3>
-                  </div>
+                    <figcaption class="vignette-description">
+                      <h3>Îles du Frioul</h3>
+                    </figcaption>
+                  </figure>
                 </a>
               </div>
-              <div
-                class="
-                  vignette-activites
-                  flex-column
-                  vignette-double
-                  flex-container
-                "
-              >
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
-                    <img
-                      class="fit-cover"
-                      src="./images/activites/4_small/parc-national-des-calanques.jpg"
-                      alt="Parc National des Calanques"
-                    />
-                  </div>
-                  <div class="vignette-description flex-column">
+              <a href="#">
+                <figure class="vignette flex-container flex-column flex-1">
+                  <img
+                    class="fit-cover vignette-image flex-1"
+                    src="images/activites/4_small/parc-national-des-calanques.jpg"
+                    alt="Parc National des Calanques"
+                  />
+                  <figcaption class="vignette-description">
                     <h3>Parc National des Calanques</h3>
-                  </div>
-                </a>
-              </div>
-              <div class="vignette-activites flex-column flex-container">
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                  </figcaption>
+                </figure>
+              </a>
+              <div class="vignette-double flex-container flex-column">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/activites/4_small/nd-de-la-garde.jpg"
+                      class="fit-cover vignette-image flex-1"
+                      src="images/activites/4_small/nd-de-la-garde.jpg"
                       alt="Notre-Dame-de-la-Garde"
                     />
-                  </div>
-                  <div class="vignette-description flex-column">
-                    <h3>Notre-Dame-de-la-Garde</h3>
-                  </div>
+                    <figcaption class="vignette-description">
+                      <h3>Notre-Dame-de-la-Garde</h3>
+                    </figcaption>
+                  </figure>
                 </a>
-                <a
-                  href="#"
-                  class="
-                    vignette
-                    flex-1
-                    vignette-verticale
-                    flex-column flex-container
-                  "
-                >
-                  <div class="vignette-image flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
                     <img
-                      class="fit-cover"
-                      src="./images/activites/4_small/parc-longchamp.jpg"
+                      class="fit-cover vignette-image flex-1"
+                      src="images/activites/4_small/parc-longchamp.jpg"
                       alt="Parc Longchamp"
                     />
-                  </div>
-                  <div class="vignette-description flex-column">
-                    <h3>Parc Longchamp</h3>
-                  </div>
+                    <figcaption class="vignette-description">
+                      <h3>Parc Longchamp</h3>
+                    </figcaption>
+                  </figure>
                 </a>
               </div>
             </div>
@@ -543,27 +421,27 @@
         <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
           <p class="colonne-footer titre">A propos</p>
           <ul class="colonne-footer flex-1 flex-column flex-container">
-            <li class="colonne-footer-item flex-1">Fonctionnement du site</li>
+            <li class="colonne-footer-item flex-1"><a href="#">Fonctionnement du site</a></li>
             <li class="colonne-footer-item flex-1">
-              Conditions générales de vente
+              <a href="#"">Conditions générales de vente</a>
             </li>
             <li class="colonne-footer-item flex-1">
-              Données et confidentialité
+              <a href="#">Données et confidentialité</a>
             </li>
           </ul>
         </div>
         <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
           <p class="colonne-footer titre">Nos hébergements</p>
           <ul class="colonne-footer flex-1 flex-column flex-container">
-            <li class="colonne-footer-item flex-1">Charte qualité</li>
-            <li class="colonne-footer-item flex-1">Soumettre votre hôtel</li>
+            <li class="colonne-footer-item flex-1"><a href="#">Charte qualité</a></li>
+            <li class="colonne-footer-item flex-1"><a href="#">Soumettre votre hôtel</a></li>
           </ul>
         </div>
         <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
           <p class="colonne-footer titre">Assistance</p>
           <ul class="colonne-footer flex-1 flex-column flex-container">
-            <li class="colonne-footer-item flex-1">Centre d'aide</li>
-            <li class="colonne-footer-item flex-1">Nous contacter</li>
+            <li class="colonne-footer-item flex-1"><a href="#">Centre d'aide</a></li>
+            <li class="colonne-footer-item flex-1"><a href="#">Nous contacter</a></li>
           </ul>
         </div>
       </nav>

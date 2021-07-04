@@ -1,0 +1,43 @@
+@import url(../css/flexbox.css);
+
+/* Reset CSS */
+html {
+    display: block;
+	margin: 0;
+	padding: 0;
+	overflow-x: visible;
+	overflow-y: visible;
+	border: 0 none;
+}
+
+body {
+    display: block;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow-x: visible;
+	overflow-y: visible;
+}
+
+.vignette {
+    border: 2px solid black;
+    flex: 1;
+}
+
+.vignette-image {
+    width: 100%;
+    height: 200px;
+}
+
+.fit-cover {
+    object-fit: cover;
+}
+
+.vignette-description {
+    justify-content: space-between;
+}
+
+.notation-wrapper {
+    flex: 1;
+    justify-content: space-around;
+}

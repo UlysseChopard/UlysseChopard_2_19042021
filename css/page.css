@@ -1,5 +1,9 @@
+html {
+  overflow: visible;
+}
 body {
   min-height: 100vh;
+  overflow: visible;
 }
 
 header,
@@ -20,3 +24,23 @@ footer {
 .titre {
   font-weight: bold;
 }
+
+menu {
+  list-style-type: none;
+}
+
+.invisible {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+figure {
+  display: inline-block;
+}
+
+figcaption {
+  display: inline;
+} 

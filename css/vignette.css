@@ -1,89 +1,74 @@
 .vignette-row {
-    justify-content: space-between;
-    /* align-items: center; */
+  justify-content: space-between;
 }
 
 .vignette {
-    padding: .25rem;
-    margin: .25rem;
-    border-top-right-radius: .75rem;
-    border-top-left-radius: .75rem;
-    border-bottom-left-radius: .75rem;
-    border-bottom-right-radius: .75rem;
-    background-color: white;
-    height: 100%;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-color: white;
 }
 
 .vignette-row {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
-.vignette-promotions {
-    height: 145px;
+.vignette-image {
+  height: 145px;
+  width: 100%;
 }
 
-.vignette-image > img {
-    border-top-left-radius: .75rem;
-    border-bottom-left-radius: .75rem;
-    height: 100%;
+.vignette-verticale .vignette-image {
+  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0;
+  width: 200px;
 }
 
-.vignette-image .vignette-activites {
-    flex: 1 0 50%;
+.promotions .vignette-image {
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  height: 135px;
+  width: 145px;
 }
 
-.vignette-promotions > img {
-    height: 135px;
+.activites .vignette-image {
+  height: 100%;
+  width: 100%;
 }
 
-.vignette-promotions .vignette-image  {
-    flex: 38%;
+.activites .vignette,
+.activites .vignette-double {
+  height: 100%;
 }
 
-.vignette-promotions .vignette-description {
-    flex: 62%;
+/* Faire ressortir les vignettes d'activite */
+.activites .vignette {
+  box-shadow: 0 0 50px #f2f2f2;
 }
 
-.vignette-activites .vignette {
-    box-shadow: 0px 0px 20px #f2f2f2;
-}
-
-.vignette-activites .vignette-description {
+/* .vignette-activites .vignette-description {
     flex: initial;
-}
-
-.vignette-hebergements {
-    flex: 30%;
-}
-
-.vignette-hebergements > .vignette-image {
-    height: 145px;
-    flex: 0 0 145px;
-}
+} */
 
 .vignette-description {
-    padding: .25rem;
-    margin: .25rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  justify-content: space-between;
 }
 
 .notation-icone {
-    color: #0065FC;
+  color: #0065fc;
 }
 
 .notation-negatif {
-    color: #f2f2f2;
+  color: #f2f2f2;
 }
 
-.vignette-verticale .vignette-image  > img {
-    border-top-right-radius: .75rem;
-    border-top-left-radius: .75rem;
-    border-bottom-left-radius: 0;
-}
-
+/* Pour titre vignettes */
 .vignette-description :not(p) {
-    font-weight: bold;
-}
-
-.vignette-double img {
-    flex: auto;
+  font-weight: bold;
 }
