@@ -3,8 +3,8 @@
 }
 
 .vignette {
-  padding: 0.25rem;
-  margin: 0.25rem;
+  padding: .5rem;
+  margin: 1rem;
   border-top-right-radius: 0.75rem;
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -27,6 +27,10 @@
   border-bottom-left-radius: 0;
   width: 200px;
 }
+/* 
+.hebergements .vignette-image {
+  width: fill;
+} */
 
 .promotions .vignette-image {
   border-top-left-radius: 0.75rem;
@@ -35,29 +39,41 @@
   width: 145px;
 }
 
-.activites .vignette-image {
-  height: 100%;
-  width: 100%;
-}
-
-.activites .vignette,
-.activites .vignette-double {
-  height: 100%;
-}
-
 /* Faire ressortir les vignettes d'activite */
+/* 
+.activites {
+  max-height: 600px;
+}
+
+.activites .contenu {
+  align-items: flex-start;
+  max-height: 550px;
+}
+
+.activites .vignette-simple,
+.activites .vignette-double {
+  max-height: px;
+}
+
 .activites .vignette {
   box-shadow: 0 0 50px #f2f2f2;
+  max-height: 450px;
 }
 
-/* .vignette-activites .vignette-description {
-    flex: initial;
+.activites .vignette-image {
+  width: 100%;
+  max-height: 200px;
 } */
 
-.vignette-description {
-  padding: 0.25rem;
-  margin: 0.25rem;
+.promotions .vignette-description {
+  padding: 0 .25rem;
+  margin: 0 .25rem;
   justify-content: space-between;
+}
+
+.vignette-verticale .vignette-description {
+  padding: .25rem 0;
+  margin: .25rem 0;
 }
 
 .notation-icone {

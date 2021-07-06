@@ -1,19 +1,9 @@
-html {
-  overflow: visible;
-}
 body {
-  min-height: 100vh;
-  overflow: visible;
+  font-family: "Raleway", sans-serif;
 }
 
-header,
 main {
   padding: 0 4rem;
-}
-
-header,
-footer {
-  flex: auto;
 }
 
 .fit-cover {
@@ -37,10 +27,7 @@ strong {
   font-weight: bold;
 }
 
-figure {
-  display: inline-block;
+.important {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-
-figcaption {
-  display: inline;
-} 

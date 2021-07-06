@@ -1,5 +1,6 @@
 .hebergements,
 .promotions {
+  background-color: #f2f2f2;
   padding: .75rem;
   margin: .75rem;
   border-radius: .75rem;
@@ -9,17 +10,8 @@
   border-radius: .75rem;
 }
 
-.hebergements,
-.promotions {
-  background-color: #f2f2f2;
-}
-
 .hebergements {
   flex: 2;
-}
-
-.promotions {
-  flex: 1;
 }
 
 .hebergements > .titre,
@@ -41,19 +33,6 @@
   font-weight: bold;
 }
 
-.activites .contenu {
-  flex-direction: row;
-}
-
 .titre {
   justify-content: space-between;
-}
-
-a.vignette {
-  display: flex;
-}
-
-.grande-police {
-  font-size: 1.3rem;
-  font-weight: bold;
 }

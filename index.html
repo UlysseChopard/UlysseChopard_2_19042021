@@ -31,7 +31,7 @@
     />
   </head>
   <body class="flex-container flex-column flex-1">
-    <header class="flex-container">
+    <header class="flex-container flex-1">
       <div class="logo">
         <img alt="logo entreprise Reservia" src="images/logo/Reservia.svg" />
       </div>
@@ -54,7 +54,7 @@
     <main class="flex-container flex-column flex-1">
       <section class="recherche-wrapper flex-container flex-column">
         <div class="recherche titre-wrapper flex-1 flex-container flex-column">
-          <h3 class="recherche-titre grande-police">
+          <h3 class="recherche-titre important">
             Trouvez votre hébergement pour des vacances de rêve
           </h3>
           <p class="recherche-item">
@@ -111,7 +111,7 @@
             id="hebergements"
           >
             <div class="titre flex-container">
-              <h3 class="grande-police">Hébergements à Marseille</h3>
+              <h3 class="important">Hébergements à Marseille</h3>
             </div>
             <div class="contenu vignette-verticale flex-1 flex-container flex-column">
               <div class="vignette-row flex-container flex-1">
@@ -250,12 +250,12 @@
             </div>
             <p class="btn-affiche"><a href="#">Afficher plus</a></p>
           </article>
-          <article
+          <aside
           class="resultats-item promotions flex-1 flex-container flex-column"
           id="promotions"
           >
             <div class="titre flex-container">
-              <h3 class="grande-police">Les plus populaires</h3>
+              <h3 class="important">Les plus populaires</h3>
               <i class="fas fa-chart-line promotions-icone"></i>
             </div>
             <div class="contenu flex-1 flex-container flex-column">
@@ -324,7 +324,7 @@
                 </figure>
               </a>
             </div>
-          </article>
+          </aside>
         </div>
         <div class="resultats flex-1 flex-container">
           <article
@@ -332,22 +332,24 @@
           id="activites"
           >
             <div class="titre">
-              <h3 class="grande-police">Activités à Marseille</h3>
+              <h3 class="important">Activités à Marseille</h3>
             </div>
-            <div class="contenu vignette-verticale flex-container">
-              <a href="#">
-                <figure class="vignette flex-container flex-column flex-1">
-                  <img
-                  class="fit-cover vignette-image flex-1"
-                  src="images/activites/4_small/vieux-port.jpg"
-                  alt="Vieux Port"
-                  />
-                  <figcaption class="vignette-description">
-                    <h3>Vieux Port</h3>
-                  </figcaption>
-                </figure>
-              </a>
-              <div class="vignette-double flex-container flex-column">
+            <div class="contenu vignette-verticale flex-container flex-1">
+              <div class="vignette-simple flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
+                    <img
+                    class="fit-cover vignette-image flex-1"
+                    src="images/activites/4_small/vieux-port.jpg"
+                    alt="Vieux Port"
+                    />
+                    <figcaption class="vignette-description">
+                      <h3>Vieux Port</h3>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="vignette-double flex-container flex-column flex-1">
                 <a href="#">
                   <figure class="vignette flex-container flex-column flex-1">
                     <img
@@ -373,19 +375,21 @@
                   </figure>
                 </a>
               </div>
-              <a href="#">
-                <figure class="vignette flex-container flex-column flex-1">
-                  <img
-                    class="fit-cover vignette-image flex-1"
-                    src="images/activites/4_small/parc-national-des-calanques.jpg"
-                    alt="Parc National des Calanques"
-                  />
-                  <figcaption class="vignette-description">
-                    <h3>Parc National des Calanques</h3>
-                  </figcaption>
-                </figure>
-              </a>
-              <div class="vignette-double flex-container flex-column">
+              <div class="vignette-simple flex-1">
+                <a href="#">
+                  <figure class="vignette flex-container flex-column flex-1">
+                    <img
+                      class="fit-cover vignette-image flex-1"
+                      src="images/activites/4_small/parc-national-des-calanques.jpg"
+                      alt="Parc National des Calanques"
+                    />
+                    <figcaption class="vignette-description">
+                      <h3>Parc National des Calanques</h3>
+                    </figcaption>
+                  </figure>
+                </a>
+              </div>
+              <div class="vignette-double flex-container flex-column flex-1">
                 <a href="#" class="flex-1">
                   <figure class="vignette flex-container flex-column flex-1">
                     <img
@@ -416,7 +420,7 @@
         </div>
       </section>
     </main>
-    <footer class="flex-container">
+    <footer class="footer flex-1 flex-container">
       <nav class="footer-nav flex-1 flex-container">
         <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
           <p class="colonne-footer titre">A propos</p>
