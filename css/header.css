@@ -47,6 +47,13 @@ header {
   color: #0065FC;
 }
 
+@media (hover: none) {
+  .navigation-item:focus {
+    border-top-color: #0065FC;
+    color: #0065FC;
+  }
+}
+
 .inscription {
   color: #0065FC;
   font-weight: bold;
