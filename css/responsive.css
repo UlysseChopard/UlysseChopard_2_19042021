@@ -1,2 +1,14 @@
 /* mobile : @media all and (max-width: 768px)
 tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
+/* Header */
+
+@media screen and (max-width: 800px) {
+    .vignette-image {
+        height: 100px;
+        width: 80px;
+    }
+
+    .navigation {
+        order: 3;
+    }
+}
