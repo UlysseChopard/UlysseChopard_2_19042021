@@ -10,22 +10,22 @@
   border-bottom-left-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   background-color: white;
+  flex: 1 1 0;
 }
 
 .vignette-row {
   padding: 0 0 1rem 0;
 }
 
-.vignette-image {
+.hebergements .vignette-image {
   height: 145px;
-  width: 100%;
+  width: 200px;
 }
 
 .vignette-verticale .vignette-image {
   border-top-right-radius: 0.75rem;
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0;
-  width: 200px;
 }
 /* 
 .hebergements .vignette-image {

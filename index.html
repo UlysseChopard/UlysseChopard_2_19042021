@@ -43,10 +43,11 @@
           <li class="menu-item navigation-item">
             <a href="#activites">Activités</a>
           </li>
+          <!-- <li class="menu-item inscription-item"><a href="#">S'inscrire</a></li> -->
         </ul>
       </nav>
       <nav class="menu-wrapper inscription flex-container flex-1">
-        <ul class="menu inscription flex-container flex-1">
+        <ul class="menu inscription flex-container">
           <li class="menu-item inscription-item"><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
@@ -70,30 +71,37 @@
               placeholder="Marseille, France"
               class="champ-item"
             />
-            <button type="submit" value="Rechercher" class="champ-item">
-              Rechercher
+            <button type="submit" value="Rechercher" class="champ-item desktop">
+              <span class="desktop">Rechercher</span>
+              <i class="fa-solid fa-magnifying-glass mobile"></i>
             </button>
           </div>
           <menu class="filtres-wrapper flex-container">
-            <li class="filtre-titre">Filtres</li>
-            <li class="filtres flex-container">
-              <a href="#" class="filtre flex-container">
-                <i class="fas fa-money-bill-wave fa-fw filtre-icone"></i>
-                <p class="filtre-item">Economique</p>
-              </a>
-              <a href="#" class="filtre flex-container">
-                <i class="fas fa-child fa-fw filtre-icone"></i>
-                <p class="filtre-item">Familial</p>
-              </a>
-              <a href="#" class="filtre flex-container">
-                <i class="fas fa-heart fa-fw filtre-icone"></i>
-                <p class="filtre-item">Romantique</p>
-              </a>
-              <a href="#" class="filtre flex-container">
-                <i class="fas fa-dog fa-fw filtre-icone"></i>
-                <p class="filtre-item">Animaux autorisés</p>
-              </a>
-            </li>
+            <ul class="filtre-titre">
+              <h3>Filtres</h3>
+              <li class="filtres flex-container">
+                <a href="#" class="filtre flex-container">
+                  <i class="fas fa-money-bill-wave fa-fw filtre-icone"></i>
+                  <p class="filtre-item">Economique</p>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="filtre flex-container">
+                  <i class="fas fa-child fa-fw filtre-icone"></i>
+                  <p class="filtre-item">Familial</p>
+                </a>
+              </li>
+                <a href="#" class="filtre flex-container">
+                  <i class="fas fa-heart fa-fw filtre-icone"></i>
+                  <p class="filtre-item">Romantique</p>
+                </a>
+              <li>
+                <a href="#" class="filtre flex-container">
+                  <i class="fas fa-dog fa-fw filtre-icone"></i>
+                  <p class="filtre-item">Animaux autorisés</p>
+                </a>
+              </li>
+            </ul>
           </menu>
         </form>
         <div class="nombre-resultats flex-container">
@@ -326,7 +334,7 @@
             </div>
           </aside>
         </div>
-        <div class="resultats flex-1 flex-container">
+        <div class="resultats flex-container">
           <article
           class="activites flex-container flex-column flex-1"
           id="activites"

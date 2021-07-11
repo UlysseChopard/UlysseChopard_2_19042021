@@ -89,6 +89,28 @@
   justify-content: space-evenly;
 }
 
+@media screen and (min-width: 800px) {
+  .champ-item .desktop {
+    display: inline-block;
+  }
+
+  .champ-item .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .champ-item .mobile {
+    display: inline-block;
+    color: white;
+  }
+
+  .champ-item .desktop {
+    display: none;
+  }
+}
+  
+
 .filtre-icone {
   color: #0065fc;
   padding: 0.7rem;

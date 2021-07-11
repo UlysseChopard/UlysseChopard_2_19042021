@@ -3,12 +3,29 @@ tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
 /* Header */
 
 @media screen and (max-width: 800px) {
+    .flex-container {
+        flex-flow: wrap;
+    }
+    
+    .logo {
+        flex: initial;
+        height: fit-content;
+    }
+
+    .inscription-item {
+        height: 100%;
+    }
+    
+    .navigation {
+        flex-flow: wrap-reverse;
+    }
+    
+    .champ {
+        width: 100%;
+    }
+
     .vignette-image {
         height: 100px;
         width: 80px;
-    }
-
-    .navigation {
-        order: 3;
     }
 }

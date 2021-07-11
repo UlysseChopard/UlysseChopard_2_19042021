@@ -12,7 +12,6 @@ header {
 }
 
 .menu-wrapper {
-  justify-content: space-around;
   align-items: center;
   min-height: inherit;
 }
@@ -21,11 +20,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   min-height: inherit;
-}
-
-.inscription {
-  justify-content: flex-end;
-  flex: initial;
 }
 
 .menu-item {
@@ -38,23 +32,17 @@ header {
 
 /* Apparence */
 .navigation-item {
-  border-top: 2px solid transparent;
+  border: 2px solid transparent;
   min-height: inherit;
 }
 
-.navigation-item:hover {
+.navigation-item:hover,
+.navigation-item:focus {
   border-top-color: #0065FC;
   color: #0065FC;
 }
 
-@media (hover: none) {
-  .navigation-item:focus {
-    border-top-color: #0065FC;
-    color: #0065FC;
-  }
-}
-
-.inscription {
+.inscription-item {
   color: #0065FC;
   font-weight: bold;
 }
