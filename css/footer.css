@@ -1,15 +1,20 @@
 .footer-nav {
   background-color: #f2f2f2;
-  padding: 1rem 5rem;
-  min-height: 25vh;
-  margin-top: 1rem;
 }
 
 .colonne-footer {
   justify-content: space-evenly;
   padding: .5rem 0;
+  height: fit-content;
 }
 
 .colonne-footer-item {
   flex: auto;
+}
+
+@media screen and (min-width: 991px) {
+  .footer-nav {
+    padding: 1rem 5rem;
+    margin-top: 1rem;
+  }
 }

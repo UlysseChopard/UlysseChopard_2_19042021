@@ -8,13 +8,10 @@
 }
 
 .champ-icone {
-  border-top-left-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-  border-top-right-radius: unset;
-  border-bottom-right-radius: unset;
+  border-radius: .75rem 0 0 .75rem;
   padding: 1rem 2rem;
   background-color: #f2f2f2;
-  height: 1.2rem;
+  height: inherit;
 }
 
 .champ > input {
@@ -29,10 +26,7 @@
 }
 
 .champ > button {
-  border-top-left-radius: unset;
-  border-bottom-left-radius: unset;
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
+  border-radius: 0 .75rem .75rem 0;
   background-color: #0065fc;
   color: white;
 }
@@ -52,6 +46,7 @@
 }
 
 .filtres {
+  display: inline-flex;
   flex: 8;
 }
 
@@ -89,25 +84,9 @@
   justify-content: space-evenly;
 }
 
-@media screen and (min-width: 800px) {
-  .champ-item .desktop {
-    display: inline-block;
-  }
-
-  .champ-item .mobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .champ-item .mobile {
-    display: inline-block;
-    color: white;
-  }
-
-  .champ-item .desktop {
-    display: none;
-  }
+.bouton-recherche::after {
+  content: "Rechercher";
+  color: white;
 }
   
 
@@ -121,6 +100,7 @@
 .filtre {
   border: 1.5px solid #f2f2f2;
   border-radius: 1.4rem;
+  font-weight: bold;
 }
 
 .nombre-resultats {

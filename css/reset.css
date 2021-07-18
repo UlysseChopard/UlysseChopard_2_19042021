@@ -83,3 +83,7 @@ button:active {
 html {
     width: 100%;
 }
+
+body {
+    width: min-content;
+}

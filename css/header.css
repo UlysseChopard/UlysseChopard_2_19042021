@@ -1,10 +1,15 @@
 /* Positionnement */
-header {
+.header {
   justify-content: space-between;
   align-items: center;
   height: 100%;
   min-height: 10vh;
-  padding: 0 5rem;
+}
+
+@media screen and (min-width: 991px) {
+  .header {
+    padding: 0 5rem;
+  }
 }
 
 .logo {
@@ -42,10 +47,12 @@ header {
   min-height: inherit;
 }
 
-.navigation-item:hover,
-.navigation-item:focus {
-  border-top-color: #0065FC;
-  color: #0065FC;
+@media screen and (min-width: 991px) {
+  .navigation-item:hover,
+  .navigation-item:focus {
+    border-top-color: #0065FC;
+    color: #0065FC;
+  }
 }
 
 .inscription-item {

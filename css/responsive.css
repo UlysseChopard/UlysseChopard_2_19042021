@@ -2,30 +2,135 @@
 tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
 /* Header */
 
-@media screen and (max-width: 800px) {
-    .flex-container {
-        flex-flow: wrap;
+@media screen and (max-width: 768px) {
+    * {
+        padding: unset;
     }
-    
-    .logo {
-        flex: initial;
-        height: fit-content;
+    /* Flexbox */
+    .flex-wrap {
+        flex-flow: row wrap;
     }
 
-    .inscription-item {
-        height: 100%;
+    .resultats > .flex-wrap,
+    .activites > .flex-wrap {
+        flex-direction: column;
+    }
+
+    .hebergements,
+    .activites {
+        margin: 1rem 0;
+    }
+    
+    .resultats > .flex-1 {
+        flex: initial;
+    }
+
+    .logo {
+        flex: auto;
+        order: -1;
+        padding-left: 1rem;
+    }
+
+    .inscription-wrapper {
+        order: -1;
     }
     
     .navigation {
-        flex-flow: wrap-reverse;
+        justify-content: space-between;
     }
     
-    .champ {
+    .navigation-item {
+        flex: 1;
+    }
+    
+    .navigation-item:hover,
+    .navigation-item:focus {
+        border-bottom-color: #0065FC;
+        color: #0065FC;
+    }
+    
+    /* Recherche */
+    .recherche-wrapper {
+        padding: 1rem;
+    }
+    
+    .vignette-verticale .vignette {
+        height: 200px;
+    }
+    
+    .vignette-image {
+        height: 70%;
+    }
+    
+    .champ > * {
+        max-width: 50%;
+    }
+    .bouton-recherche::after {
+        font-family: "Font Awesome\ 5 Free";
+        content: "\01F50D";
+        color: white;
+        background-color: inherit;
+    }
+    
+    .nombre-resultats,
+    .nombre-resultats-item {
+        flex: 1;
+    }
+    
+    /* Inversion promotions et hebergements */
+    .promotions {
+        order: -1;
+    }
+    
+    /* Hebergements */
+    .vignette-row {
+        padding: unset;
+    }
+    
+    .vignette {
+        width: 90vw;
+    }
+    
+    .vignette-image {
         width: 100%;
     }
+    
+    /* Footer */
+    .footer {
+        height: unset;
+        overflow: visible;
+    }
+    .footer-nav {
+        flex-direction: column;
+        height: unset;
+        padding: unset;
+    }
+    
+    .colonne-footer-wrapper {
+        align-items: center;
+    }
+}
 
-    .vignette-image {
-        height: 100px;
-        width: 80px;
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 1rem;
+    }
+    .inscription-wrapper {
+        order: 0;
+    }
+
+    .promotions .vignette-image {
+        flex: 2;
+    }
+
+    .hebergements .vignette-description {
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .activites .vignette-description {
+        align-self: center;
     }
 }

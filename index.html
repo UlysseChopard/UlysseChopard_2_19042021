@@ -8,7 +8,16 @@
     <!-- Base URL à la racine -->
     <base href="/">
 
-    <link rel="stylesheet" type="text/css" media="all" href="styles.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/page.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/flexbox.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/recherche.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/resultats.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/vignette.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/responsive.css"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -22,7 +31,8 @@
       src="https://kit.fontawesome.com/e33b8d6431.js"
       crossorigin="anonymous"
     ></script>
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
     <!-- Infos sur la page -->
     <meta name="author" content="Ulysse Chopard" />
     <meta
@@ -30,12 +40,12 @@
       content="Cette page est un exercice d'intégration d'une maquette pour un site de réservation de voyages"
     />
   </head>
-  <body class="flex-container flex-column flex-1">
-    <header class="flex-container flex-1">
+  <body class="flex-container flex-column flex-1 flex-wrap">
+    <header class="header flex-container flex-1 flex-wrap">
       <div class="logo">
         <img alt="logo entreprise Reservia" src="images/logo/Reservia.svg" />
       </div>
-      <nav class="menu-wrapper flex-container flex-1">
+      <nav class="menu-wrapper navigation-wrapper flex-container flex-1">
         <ul class="menu navigation flex-container flex-1">
           <li class="menu-item navigation-item">
             <a href="#hebergements">Hébergements</a>
@@ -43,17 +53,16 @@
           <li class="menu-item navigation-item">
             <a href="#activites">Activités</a>
           </li>
-          <!-- <li class="menu-item inscription-item"><a href="#">S'inscrire</a></li> -->
         </ul>
       </nav>
-      <nav class="menu-wrapper inscription flex-container">
+      <nav class="menu-wrapper inscription-wrapper flex-container">
         <ul class="menu inscription flex-container">
           <li class="menu-item inscription-item"><a href="#">S'inscrire</a></li>
         </ul>
       </nav>
     </header>
-    <main class="flex-container flex-column flex-1">
-      <section class="recherche-wrapper flex-container flex-column">
+    <main class="flex-container flex-column flex-1 flex-wrap">
+      <section class="recherche-wrapper flex-container flex-column flex-wrap">
         <div class="recherche titre-wrapper flex-1 flex-container flex-column">
           <h3 class="recherche-titre important">
             Trouvez votre hébergement pour des vacances de rêve
@@ -71,15 +80,14 @@
               placeholder="Marseille, France"
               class="champ-item"
             />
-            <button type="submit" value="Rechercher" class="champ-item desktop">
-              <span class="desktop">Rechercher</span>
-              <i class="fa-solid fa-magnifying-glass mobile"></i>
+            <button type="submit" value="Rechercher" class="champ-item">
+              <span class="bouton-recherche"></span>
             </button>
           </div>
-          <menu class="filtres-wrapper flex-container">
-            <ul class="filtre-titre">
-              <h3>Filtres</h3>
-              <li class="filtres flex-container">
+          <div class="filtres-wrapper flex-container flex-wrap">
+            <h3 class="filtre-titre flex-wrap">Filtres</h3>
+            <ul class="filtres flex-container flex-wrap">
+              <li>
                 <a href="#" class="filtre flex-container">
                   <i class="fas fa-money-bill-wave fa-fw filtre-icone"></i>
                   <p class="filtre-item">Economique</p>
@@ -91,10 +99,12 @@
                   <p class="filtre-item">Familial</p>
                 </a>
               </li>
+              <li>
                 <a href="#" class="filtre flex-container">
                   <i class="fas fa-heart fa-fw filtre-icone"></i>
                   <p class="filtre-item">Romantique</p>
                 </a>
+              </li>
               <li>
                 <a href="#" class="filtre flex-container">
                   <i class="fas fa-dog fa-fw filtre-icone"></i>
@@ -102,7 +112,7 @@
                 </a>
               </li>
             </ul>
-          </menu>
+          </div>
         </form>
         <div class="nombre-resultats flex-container">
           <i class="fas fa-info fa-fw nombre-resultats-icone"></i>
@@ -111,18 +121,18 @@
           </p>
         </div>
       </section>
-      <section class="resultats-wrapper flex-container flex-column">
+      <section class="resultats-wrapper flex-container flex-column flex-wrap">
         <h3 class="invisible">Resultats de la recherche de logement</h3>
-        <div class="resultats flex-1 flex-container">
+        <div class="resultats flex-1 flex-container flex-wrap">
           <article
-            class="resultats-item hebergements flex-container flex-column"
+            class="resultats-item hebergements flex-container flex-column flex-wrap"
             id="hebergements"
           >
-            <div class="titre flex-container">
+            <div class="titre flex-container flex-wrap">
               <h3 class="important">Hébergements à Marseille</h3>
             </div>
-            <div class="contenu vignette-verticale flex-1 flex-container flex-column">
-              <div class="vignette-row flex-container flex-1">
+            <div class="contenu vignette-verticale flex-1 flex-container flex-column flex-wrap">
+              <div class="vignette-row flex-container flex-1 flex-wrap">
                 <a href="#">
                   <figure class="vignette flex-container flex-column flex-1">
                     <img
@@ -141,8 +151,9 @@
                         <i
                         class="fas fa-star notation-icone notation-negatif"
                         ></i>
-                      </figcaption>
-                    </figure>
+                      </div>
+                    </figcaption>
+                  </figure>
                 </a>
                 <a href="#">
                   <figure class="vignette flex-container flex-column flex-1">
@@ -187,7 +198,7 @@
                   </figure>
                 </a>
               </div>
-              <div class="vignette-row flex-1 flex-container">
+              <div class="vignette-row flex-1 flex-container flex-wrap">
                 <a href="#">
                   <figure class="vignette flex-container flex-column flex-1">
                     <img
@@ -259,10 +270,10 @@
             <p class="btn-affiche"><a href="#">Afficher plus</a></p>
           </article>
           <aside
-          class="resultats-item promotions flex-1 flex-container flex-column"
+          class="resultats-item promotions flex-1 flex-container flex-column flex-wrap"
           id="promotions"
           >
-            <div class="titre flex-container">
+            <div class="titre flex-container flex-wrap">
               <h3 class="important">Les plus populaires</h3>
               <i class="fas fa-chart-line promotions-icone"></i>
             </div>
@@ -334,15 +345,15 @@
             </div>
           </aside>
         </div>
-        <div class="resultats flex-container">
+        <div class="resultats flex-container flex-wrap">
           <article
-          class="activites flex-container flex-column flex-1"
+          class="activites flex-container flex-column flex-1 flex-wrap"
           id="activites"
           >
-            <div class="titre">
+            <div class="titre flex-wrap">
               <h3 class="important">Activités à Marseille</h3>
             </div>
-            <div class="contenu vignette-verticale flex-container flex-1">
+            <div class="contenu vignette-verticale flex-container flex-1 flex-wrap">
               <div class="vignette-simple flex-1">
                 <a href="#">
                   <figure class="vignette flex-container flex-column flex-1">
@@ -428,14 +439,14 @@
         </div>
       </section>
     </main>
-    <footer class="footer flex-1 flex-container">
+    <footer class="footer flex-1 flex-container flex-wrap">
       <nav class="footer-nav flex-1 flex-container">
         <div class="colonne-footer-wrapper flex-1 flex-column flex-container">
           <p class="colonne-footer titre">A propos</p>
           <ul class="colonne-footer flex-1 flex-column flex-container">
             <li class="colonne-footer-item flex-1"><a href="#">Fonctionnement du site</a></li>
             <li class="colonne-footer-item flex-1">
-              <a href="#"">Conditions générales de vente</a>
+              <a href="#">Conditions générales de vente</a>
             </li>
             <li class="colonne-footer-item flex-1">
               <a href="#">Données et confidentialité</a>
