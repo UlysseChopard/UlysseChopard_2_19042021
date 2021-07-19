@@ -12,7 +12,7 @@
 .vignette-row {
   padding: 0 0 1rem 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .hebergements .vignette-image {
     height: 145px;
     width: 200px;
@@ -35,10 +35,6 @@
   justify-content: space-between;
 }
 
-.activites .vignette {
-  height: 100%;
-}
-
 .vignette-verticale .vignette-description {
   padding: .25rem 0;
   margin: .25rem 0;
@@ -55,4 +51,20 @@
 /* Pour titre vignettes */
 .vignette-description :not(p) {
   font-weight: bold;
+}
+
+
+.activites .vignette {
+  height: 100%;
+  padding: unset;
+  box-shadow: 0 0 10px 5px #f2f2f2;
+}
+
+.activites .vignette-description {
+  padding: .5rem 1rem;
+}
+
+.vignette-double,
+.vignette-simple {
+  height: 100%;
 }

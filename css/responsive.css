@@ -1,6 +1,46 @@
 /* mobile : @media all and (max-width: 768px)
-tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
-/* Header */
+tablette: @media screen and (min-width: 768px) and (max-width: 991px)
+grands écrans: @media screen and (min-width: 1940px) */
+
+/* Bloque la largeur max de la page */
+@media  screen and (min-width: 1940px) {
+    html,
+    body {
+        width: 1940px;
+    }
+}
+
+/* Bloque la largeur min de la page */
+@media screen and (max-width: 300px) {
+    html,
+    body {
+        width: 400px;
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 1rem;
+    }
+    .inscription-wrapper {
+        order: 0;
+    }
+
+    .promotions .vignette-image {
+        flex: 2;
+    }
+
+    .hebergements .vignette-description {
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .activites .vignette-description {
+        align-self: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     * {
@@ -19,10 +59,6 @@ tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
     .hebergements,
     .activites {
         margin: 1rem 0;
-    }
-    
-    .resultats > .flex-1 {
-        flex: initial;
     }
 
     .logo {
@@ -65,11 +101,12 @@ tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
     .champ > * {
         max-width: 50%;
     }
+
     .bouton-recherche::after {
-        font-family: "Font Awesome\ 5 Free";
-        content: "\01F50D";
-        color: white;
-        background-color: inherit;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-style: normal;
+        content: "\f002";
     }
     
     .nombre-resultats,
@@ -107,30 +144,7 @@ tablette: @media screen and (min-width: 768px) and (max-width: 991px) */
     }
     
     .colonne-footer-wrapper {
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .header {
-        padding: 1rem;
-    }
-    .inscription-wrapper {
-        order: 0;
-    }
-
-    .promotions .vignette-image {
-        flex: 2;
-    }
-
-    .hebergements .vignette-description {
-        flex-direction: row;
-        justify-content: space-evenly;
-        justify-self: center;
-        align-items: center;
-    }
-
-    .activites .vignette-description {
-        align-self: center;
+        align-items: flex-start;
+        padding-left: 1rem;
     }
 }

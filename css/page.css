@@ -34,3 +34,11 @@ strong {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
