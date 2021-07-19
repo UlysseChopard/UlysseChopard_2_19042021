@@ -80,10 +80,7 @@ button:active {
     transform: scale(0.99);
 }
 
-html {
-    width: 100%;
-}
-
+html,
 body {
-    width: min-content;
+    width: 100%;
 }

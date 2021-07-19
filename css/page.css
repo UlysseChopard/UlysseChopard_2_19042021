@@ -2,15 +2,8 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-
-@media screen and (min-width: 991px){
-  main {
-  padding: 0 4rem;
-  }
-}
-
 .fit-cover {
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
 }
 

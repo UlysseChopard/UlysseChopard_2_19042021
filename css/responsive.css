@@ -11,14 +11,14 @@ grands écrans: @media screen and (min-width: 1940px) */
 }
 
 /* Bloque la largeur min de la page */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     html,
     body {
         width: 400px;
         overflow: scroll;
     }
 }
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .header {
         padding: 1rem;
     }
@@ -129,7 +129,7 @@ grands écrans: @media screen and (min-width: 1940px) */
     }
     
     .vignette-image {
-        width: 100%;
+        /* width: 100%; */
     }
     
     /* Footer */
