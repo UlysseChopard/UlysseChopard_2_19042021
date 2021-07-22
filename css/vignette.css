@@ -15,6 +15,7 @@
 
 .vignette-verticale .vignette-image {
   border-radius: .75rem .75rem 0 0;
+  height: 85%;
 }
 
 .promotions .vignette-image {
@@ -26,7 +27,7 @@
 .promotions .vignette-description {
   padding: 0 .25rem;
   margin: 0 .25rem;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .vignette-verticale .vignette-description {
@@ -50,16 +51,24 @@
 
 
 .activites .vignette {
-  /* height: 100%; */
+  height: 90%;
   padding: unset;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
+
+/* .vignette-double > .vignette-image {
+  height: 90%;
+} */
 
 .activites .vignette-description {
   padding: .5rem 1rem;
 }
 
-.vignette-double,
-.vignette-simple {
+.activites .vignette {
   height: 100%;
+}
+
+.activites .contenu a {
+  height: 100%;
+  margin: .5rem;
 }

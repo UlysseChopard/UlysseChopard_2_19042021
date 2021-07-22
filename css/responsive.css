@@ -7,6 +7,13 @@ grands écrans: @media screen and (min-width: 1940px) */
     html,
     body {
         width: 1940px;
+        align-items: center;
+    }
+
+    .header,
+    .footer  {
+        min-width: 1940px;
+        justify-content: space-between;
     }
 }
 
@@ -39,12 +46,17 @@ grands écrans: @media screen and (min-width: 1940px) */
       }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 991px) {
     .header {
         padding: 1rem;
     }
+
     .inscription-wrapper {
         order: 0;
+    }
+
+    .promotions .vignette-description {
+        justify-content: space-evenly;
     }
 
     .promotions .vignette-image {
