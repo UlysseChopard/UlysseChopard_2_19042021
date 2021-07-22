@@ -17,6 +17,18 @@ grands écrans: @media screen and (min-width: 1940px) */
     }
 }
 
+/* Adapte la largeur des images à un petit écran d'ordinateur */
+@media screen and (min-width: 1024px) {
+    .hebergements .vignette-image {
+        height: 145px;
+        width: 200px;
+    }
+
+    .activites .vignette {
+        height: 100%;
+    }
+}
+
 /* Bloque la largeur min de la page */
 @media screen and (max-width: 400px) {
     html,
@@ -39,14 +51,18 @@ grands écrans: @media screen and (min-width: 1940px) */
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) and (max-width: 1024px) {
     .hebergements .vignette-image {
         height: 145px;
-        width: 200px;
+        width: 150px;
       }
+
+    .hebergements .vignette {
+        width: min-content;
+    }
 }
 
-@media screen and (min-width: 767px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .header {
         padding: 1rem;
     }
@@ -68,6 +84,10 @@ grands écrans: @media screen and (min-width: 1940px) */
         justify-content: space-evenly;
         justify-self: center;
         align-items: center;
+    }
+
+    .activites .vignette {
+        height: 90%;
     }
 
     .activites .vignette-description {
