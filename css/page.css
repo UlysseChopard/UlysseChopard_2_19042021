@@ -5,6 +5,14 @@ body {
   justify-content: space-between;
 }
 
+.header {
+  margin: 0 1rem;
+}
+
+main {
+  margin: 1rem 0;
+}
+
 button:hover,
 button:focus {
     background: none;

@@ -1,20 +1,18 @@
 .hebergements,
 .promotions {
   background-color: #f2f2f2;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
-@media screen and (min-width: 991px) {
-  .hebergements,
-  .promotions {
-    padding: .75rem;
-    margin: .75rem;
-  }
+.hebergements,
+.promotions {
+  padding: 0.75rem;
+  margin: 0.75rem;
 }
 
 .activites {
   height: 100%;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 .activites .contenu {
@@ -29,10 +27,9 @@
 .contenu > p,
 .activites > .titre,
 .promotions > .titre {
-  padding: .25rem 1rem;
-  margin: .25rem;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem;
 }
-
 
 .contenu {
   justify-content: space-between;
@@ -42,7 +39,7 @@
 .btn-affiche {
   align-self: flex-start;
   font-weight: bold;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .titre {

@@ -6,12 +6,6 @@
   width: 100% ;
 }
 
-@media screen and (min-width: 991px) {
-  .header {
-    padding: 0 .5rem;
-  }
-}
-
 .logo {
   flex: 5;
 }
@@ -45,14 +39,6 @@
 .navigation-item {
   border: 2px solid transparent;
   height: 100%;
-}
-
-@media screen and (min-width: 991px) {
-  .navigation-item:hover,
-  .navigation-item:focus {
-    border-top-color: #0065FC;
-    color: #0065FC;
-  }
 }
 
 .inscription-item {
