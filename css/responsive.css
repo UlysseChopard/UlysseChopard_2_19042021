@@ -1,204 +1,206 @@
-/* mobile : @media all and (max-width: 768px)
-tablette: @media screen and (min-width: 768px) and (max-width: 991px)
-grands écrans: @media screen and (min-width: 1940px) */
-
-/* Bloque la largeur max de la page */
-@media  screen and (min-width: 1940px) {
-    html,
-    body {
-        width: 1940px;
-        align-items: center;
-    }
-
-    .header,
-    .footer  {
-        min-width: 1940px;
-        justify-content: space-between;
-    }
-}
-
-/* Adapte la largeur des images à un petit écran d'ordinateur */
-@media screen and (min-width: 1024px) {
-    .hebergements .vignette-image {
-        height: 145px;
-        width: 200px;
-    }
-
-    .activites .vignette {
-        height: 100%;
-    }
-}
+/**
+ * petits écrans : @media screen and (max-width: 400px) -> largeur bloquée
+ * mobiles : @media screen and (max-width: 760px)
+ * tablettes : @media screen and (min-width: 760px) and (max-width: 990px)
+ * écrans courants : @media screen and (min-width: 990px) and (max-width: 1030px)
+ * grands écrans : @media screen and (min-width: 1940px) -> largeur bloquée
+ */
 
 /* Bloque la largeur min de la page */
-@media screen and (max-width: 400px) {
-    html,
-    body {
-        width: 400px;
-        overflow: scroll;
-    }
+@media screen and (max-width: 300px) {
+  html,
+  body {
+    min-width: 300px;
+  }
 
-    .champ-recherche-wrapper {
-        width: 90vw;
-    }
+  .champ-recherche-wrapper {
+    width: 90vw;
+  }
 
-    .promotions .vignette {
-        flex-direction: column;
-    }
+  .promotions .vignette {
+    flex-direction: column;
+  }
 
-    .promotions .vignette-image {
-        width: 100%;
-        border-radius: .75rem .75rem 0 0;
-    }
+  .promotions .vignette-image {
+    width: 100%;
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1024px) {
-    .hebergements .vignette-image {
-        height: 145px;
-        width: 150px;
-      }
+/* Mobiles */
+@media screen and (max-width: 760px) {
+  /* Flexbox */
+  .flex-wrap {
+    flex-flow: row wrap;
+  }
 
-    .hebergements .vignette {
-        width: min-content;
-    }
+  .resultats .flex-wrap,
+  .activites .flex-wrap {
+    flex-direction: column;
+  }
+
+  .hebergements,
+  .activites {
+    margin: 1rem 0;
+  }
+
+  .logo {
+    flex: auto;
+    order: -1;
+    padding-left: 1rem;
+  }
+
+  .inscription-wrapper {
+    order: -1;
+  }
+
+  .navigation {
+    justify-content: space-between;
+  }
+
+  .navigation-item {
+    flex: 1;
+  }
+
+  .navigation-item:hover,
+  .navigation-item:focus {
+    border-bottom-color: #0065fc;
+    color: #0065fc;
+  }
+
+  /* Recherche */
+  .recherche-wrapper {
+    padding: 1rem;
+  }
+
+  .champ > * {
+    max-width: 50%;
+  }
+
+  .bouton-recherche::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    content: "\f002";
+  }
+
+  .nombre-resultats,
+  .nombre-resultats-item {
+    flex: 1;
+  }
+
+  /* Inversion promotions et hebergements */
+  .promotions {
+    order: -1;
+  }
+
+  /* Hebergements */
+  .hebergements .vignette {
+    height: 90%;
+  }
+
+  .vignette-image {
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .vignette-row {
+    padding: unset;
+  }
+
+  .vignette {
+    width: 90vw;
+  }
+
+  /* Footer */
+  .footer {
+    height: unset;
+    overflow: visible;
+  }
+  .footer-nav {
+    flex-direction: column;
+    height: unset;
+    padding: unset;
+  }
+
+  .colonne-footer-wrapper {
+    align-self: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    width: 70%;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .header {
-        padding: 1rem;
-    }
+/* Tablettes */
+@media screen and (min-width: 760px) and (max-width: 990px) {
+  .header {
+    padding: 1rem;
+  }
 
-    .inscription-wrapper {
-        order: 0;
-    }
+  .inscription-wrapper {
+    order: 0;
+  }
 
-    .promotions .vignette-description {
-        justify-content: space-evenly;
-    }
+  .promotions .vignette-description {
+    justify-content: space-evenly;
+  }
 
-    .promotions .vignette-image {
-        flex: 2;
-    }
+  .promotions .vignette-image {
+    flex: 2;
+  }
 
-    .hebergements .vignette-description {
-        flex-direction: row;
-        justify-content: space-evenly;
-        justify-self: center;
-        align-items: center;
-    }
+  .hebergements .vignette-description {
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+  }
 
-    .activites .vignette {
-        height: 90%;
-    }
+  .activites .vignette {
+    height: 90%;
+  }
 
-    .activites .vignette-description {
-        align-self: center;
-    }
+  .activites .vignette-description {
+    align-self: center;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    html,
-    body,
-    body > *,
-    main > * {
-        max-width: 100vw;
-    }
-    /* Flexbox */
-    .flex-wrap {
-        flex-flow: row wrap;
-    }
+/* Largeur des vignettes adaptée aux petits écrans d'ordinateur */
+@media screen and (min-width: 990px) and (max-width: 1030px) {
+  .hebergements .vignette-image {
+    height: 145px;
+    width: 150px;
+  }
 
-    .resultats > .flex-wrap,
-    .activites > .flex-wrap {
-        flex-direction: column;
-    }
-
-    .hebergements,
-    .activites {
-        margin: 1rem 0;
-    }
-
-    .logo {
-        flex: auto;
-        order: -1;
-        padding-left: 1rem;
-    }
-
-    .inscription-wrapper {
-        order: -1;
-    }
-    
-    .navigation {
-        justify-content: space-between;
-    }
-    
-    .navigation-item {
-        flex: 1;
-    }
-    
-    .navigation-item:hover,
-    .navigation-item:focus {
-        border-bottom-color: #0065FC;
-        color: #0065FC;
-    }
-    
-    /* Recherche */
-    .recherche-wrapper {
-        padding: 1rem;
-    }
-    
-    
-    .champ > * {
-        max-width: 50%;
-    }
-    
-    .bouton-recherche::after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-style: normal;
-        content: "\f002";
-    }
-    
-    .nombre-resultats,
-    .nombre-resultats-item {
-        flex: 1;
-    }
-    
-    /* Inversion promotions et hebergements */
-    .promotions {
-        order: -1;
-    }
-    
-    /* Hebergements */
-    .hebergements .vignette {
-        height: 90%;
-    }
-    
-    .vignette-image {
-        min-height: 200px;
-        max-height: 200px;
-    }
-
-    .vignette-row {
-        padding: unset;
-    }
-    
-    .vignette {
-        width: 90vw;
-    }
-    
-    /* Footer */
-    .footer {
-        height: unset;
-        overflow: visible;
-    }
-    .footer-nav {
-        flex-direction: column;
-        height: unset;
-        padding: unset;
-    }
-    
-    .colonne-footer-wrapper {
-        align-items: flex-start;
-        padding-left: 1rem;
-    }
+  .hebergements .vignette {
+    width: min-content;
+  }
 }
+
+/* Adapte la largeur des images à un grand écran */
+@media screen and (min-width: 1030px) {
+  .hebergements .vignette-image {
+    height: 145px;
+    width: 200px;
+  }
+
+  .activites .vignette {
+    height: 100%;
+  }
+}
+
+/* Bloque la largeur max de la page */
+@media screen and (min-width: 1940px) {
+  html,
+  body {
+    width: 1940px;
+    align-items: center;
+  }
+
+  .header,
+  .footer {
+    min-width: 1940px;
+    justify-content: space-between;
+  }
+}
+

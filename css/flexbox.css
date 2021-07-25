@@ -2,17 +2,13 @@
   display: flex;
 }
 
-/* Conteneurs en colonne */
-
 .flex-column {
   flex-direction: column;
 }
 
-/* Valeurs flex standards */
-
 /* flex: 1 1 0 */
 .flex-1 {
-  flex: 1;
+  flex: 1 1 0;
 }
 
 /* flex: 1 1 auto */
@@ -33,5 +29,3 @@ flex: 0 0 auto
   flex: none;
 }
 */
-
-/* Disposition des elements */

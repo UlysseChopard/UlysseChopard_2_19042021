@@ -63,17 +63,3 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-
-button:hover,
-button:focus {
-    background: none;
-}
-
-button:active {
-    transform: scale(0.99);
-}
-
-html,
-body {
-    width: 100vw;
-}
