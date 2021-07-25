@@ -12,8 +12,17 @@
   }
 }
 
+.resultats {
+  max-height: 60%;
+}
+
 .activites {
+  height: 100%;
   border-radius: .75rem;
+}
+
+.activites .contenu {
+  height: 100%;
 }
 
 .hebergements {

@@ -50,21 +50,13 @@
 }
 
 .activites .vignette {
-  height: 90%;
+  height: 60%;
   padding: unset;
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
 
-/* .vignette-double > .vignette-image {
-  height: 90%;
-} */
-
 .activites .vignette-description {
   padding: 0.5rem 1rem;
-}
-
-.activites .contenu {
-  max-height: 50vh;
 }
 
 .activites .contenu a {
