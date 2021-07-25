@@ -3,6 +3,10 @@
   padding: 0 0 1rem 0;
 }
 
+.vignette-row > a {
+  min-width: 33%;
+}
+
 .vignette {
   padding: 0.5rem;
   margin: 1rem;
@@ -15,8 +19,13 @@
 }
 
 .hebergements .vignette-image {
-  height: 150px;
-  width: 145px;
+  min-height: 100px;
+  height: 100px;
+  width: 120px;
+}
+
+.hebergements .vignette-description {
+  flex: 1;
 }
 
 .hebergements .vignette {

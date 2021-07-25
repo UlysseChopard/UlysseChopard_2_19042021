@@ -1,18 +1,18 @@
-/* Bloque la largeur minimum à 300px */
-@media screen and (max-width: 300px) {
+/* Bloque la largeur minimum à 400px */
+@media screen and (max-width: 400px) {
   html,
   body {
-    min-width: 300px;
+    min-width: 400px;
   }
 
-  /* Flexbox */
-  .flex-1 {
-    flex: 1 0 initial;
+  .vignette-image {
+    width: 100%;
+    max-width: 350px;
   }
 }
 
 /* Inversion menu de navigation et inscription */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
     .inscription-wrapper {
         order: -1;
     }
@@ -22,42 +22,35 @@
     }
 }
 
-/* Gère le tactile */
-@media (hover: none) {
-  .filtre:focus {
-    background-color: #f2f2f2;
-    color: #0065fc;
-  }
-}
 
 @media screen and (max-width: 700px) {
   /* Flexbox */
   .flex-1 {
     flex: 1 0 auto;
   }
-
+  
   /* Page */
   html,
   body {
     align-self: center;
     align-items: center;
   }
-
+  
   .header,
   main,
   .footer {
     max-width: 100%;
   }
-
+  
   .resultats {
     flex-direction: column-reverse;
   }
-
+  
   /* Header */
   .header {
     flex-flow: row wrap;
   }
-
+  
   .navigation-item:hover {
     border-top: transparent;
     border-bottom: 2px solid #0065fc;
@@ -69,66 +62,63 @@
   .filtre-titre {
     margin-left: 0.2rem;
   }
-
+  
   .filtres {
     flex-wrap: wrap;
   }
-
+  
   .champ > input {
     width: 50%;
   }
-
+  
   .bouton-recherche::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-style: normal;
     content: "\f002";
   }
-
+  
   /* Resultats */
   .promotions,
   .hebergements {
     margin: 0.5rem;
   }
-
+  
   /* Promotions */
   .promotions .contenu {
     flex: 1 0 0;
   }
-
+  
   /* Hebergements */
   .vignette-row {
     flex-direction: column;
   }
-
+  
   .vignette-row {
     align-items: center;
   }
-
-  .hebergements a {
-    width: 90%;
-  }
-
+  
   .hebergements .vignette-image {
     height: 150px;
     min-height: 150px;
-    width: 100%;
+    width: 300px;
+    min-width: 100%;
   }
-
-  .hebergements .vignette {
+  
+  /* .hebergements .vignette {
     width: 100%;
-  }
-
+  } */
+  
   /* Activites */
   .activites .contenu {
     flex-direction: column;
   }
-
+  
   .activites .vignette-image {
     min-height: 150px;
     height: 150px;
   }
-
+  
   /* Footer */
   .footer-nav {
     flex-direction: column;
@@ -158,54 +148,73 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
-
+  
   /* Hebergements et promotions en colonne */
+  .hebergements {
+    flex: 3;
+  }
+  
+  .promotions {
+    flex: 2;
+  }
   .promotions .contenu {
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding: unset;
   }
-
+  
   .hebergements .contenu {
     flex-direction: row;
   }
-
+  
   .vignette-row {
     flex-direction: row;
     width: 50%;
     justify-content: space-around;
   }
 
-  .hebergements .vignette-image {
-    min-height: 150px;
-    height: 150px;
-    width: 170px;
+  .vignette-row > a {
+    height: 33%;
   }
-
-  /* .hebergements a,
-    .promotions a {
-        width: 100%;
-    } */
+  
+  .hebergements .vignette-image {
+    min-height: 100px;
+    height: 100px;
+    width: 120px;
+  }
+  
+  .hebergements .vignette {
+    min-height: 90%;
+    height: 90%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .hebergements .vignette-image {
-        min-height: 200px;
-        height: 200px;
-        width: 250px;
-    }
+  .hebergements .vignette-image {
+    min-height: 180px;
+    height: 180px;
+    width: 200px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
-    /* Le champ de recherche se place au milieu */
-    .recherche-wrapper {
-        align-self: center;
-    }
+  /* Le champ de recherche se place au milieu */
+  .recherche-wrapper {
+    align-self: center;
+  }
+  
+  .hebergements .vignette-image {
+    min-height: 300px;
+    height: 300px;
+    width: 400px;
+  }
+}
 
-    .hebergements .vignette-image {
-        min-height: 300px;
-        height: 300px;
-        width: 400px;
-    }
+/* Gère le tactile */
+@media (hover: none) {
+  .filtre:focus {
+    background-color: #f2f2f2;
+    color: #0065fc;
+  }
 }

@@ -6,11 +6,11 @@ body {
 }
 
 .header {
-  margin: 0 1rem;
+  padding: 3rem;
 }
 
 main {
-  margin: 1rem 0;
+  padding: 2rem;
 }
 
 button:hover,
