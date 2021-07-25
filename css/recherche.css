@@ -1,10 +1,10 @@
 .recherche-wrapper {
-  flex: auto;
+  flex: 1 1 auto;
   padding: 1rem;
 }
 
 .champ {
-  flex: 1;
+  flex: 1 1 0;
   padding: 1rem 0;
 }
 
@@ -49,7 +49,7 @@
 
 .filtres {
   display: inline-flex;
-  flex: 8;
+  flex: 8 1 0;
 }
 
 .filtre {

@@ -1,5 +1,6 @@
 .footer {
   margin-top: 1rem;
+  width: 100%;
 }
 
 .footer-nav {
@@ -13,12 +14,11 @@
 }
 
 .colonne-footer-item {
-  flex: auto;
+  flex: 1;
 }
 
-@media screen and (min-width: 991px) {
-  .footer-nav {
+
+.footer-nav {
     padding: 1rem 5rem;
     margin-top: 1rem;
-  }
 }
