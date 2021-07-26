@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 465px) {
   /* Inversion menu de navigation et inscription */
   .inscription-wrapper {
     order: -1;
@@ -23,6 +23,18 @@
 
   .logo {
     order: -1;
+  }
+  /* Barre sous le menu */
+  
+  .navigation-item {
+    border-bottom:2px solid #f2f2f2;
+    padding: 1rem;
+  }
+
+  .navigation-item:active {
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: #0065fc;
   }
 }
 
@@ -55,10 +67,6 @@
     padding: 1rem 0;
   }
 
-  .navigation-item:hover {
-    border-top: transparent;
-    border-bottom: 2px solid #0065fc;
-  }
   /* Recherche */
   .recherche-wrapper {
     padding: 1rem;
@@ -95,11 +103,6 @@
   .hebergements {
     margin: unset;
     padding: unset;
-  }
-
-  .promotions .vignette,
-  .hebergements .vignette {
-    margin: unset;
   }
 
   /* Promotions */
@@ -206,10 +209,7 @@
     flex-direction: row;
     width: 50%;
     justify-content: space-around;
-  }
-
-  .vignette-row > a {
-    height: 33%;
+    padding: 0 1rem;
   }
 
   .hebergements .vignette-image {
