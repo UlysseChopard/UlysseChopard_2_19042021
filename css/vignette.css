@@ -35,7 +35,7 @@
 
 .promotions .vignette-image {
   border-radius: 0.75rem 0 0 0.75rem;
-  height: 135px;
+  height: 145px;
   min-width: 50%;
   width: 50%;
 }
@@ -80,6 +80,6 @@
   margin: 0.5rem;
 }
 
-.activites .contenu {
-  height: 50%;
+.activites .vignette-image {
+  min-height: 150px;
 }

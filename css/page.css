@@ -1,16 +1,12 @@
-html,
 body {
   width: 100%;
+  align-self: center;
   align-items: center;
   justify-content: space-between;
 }
 
 .header {
   padding: 3rem;
-}
-
-main {
-  padding: 2rem;
 }
 
 button:hover,
