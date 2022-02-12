@@ -15,4 +15,5 @@ pages:
     paths:
       - public
   rules:
-    - if: $CI_COMMIT_BRANCH == "restart-from-scratch"
+    - if: $CI_COMMIT_BRANCH == "dev"
+
