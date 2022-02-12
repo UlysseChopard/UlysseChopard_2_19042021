@@ -1,0 +1,30 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* flex: 1 1 0 */
+.flex-1 {
+  flex: 1 1 0;
+}
+
+/* flex: 1 1 auto */
+.flex-auto {
+  flex: auto;
+}
+
+/* flex: 0 1 auto */
+/* {
+  flex: initial;
+} */
+
+
+/*
+flex: 0 0 auto
+{
+  flex: none;
+}
+*/

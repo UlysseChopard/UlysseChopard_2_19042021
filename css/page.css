@@ -1,0 +1,57 @@
+body {
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 3rem;
+}
+
+button:hover,
+button:focus {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.fit-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titre {
+  font-weight: bold;
+}
+
+menu {
+  list-style-type: none;
+}
+
+.invisible {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.important {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}

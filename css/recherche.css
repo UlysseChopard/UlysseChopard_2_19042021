@@ -1,0 +1,115 @@
+.recherche-wrapper {
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+
+.champ {
+  flex: 1 1 0;
+  padding: 1rem 0;
+}
+
+.champ-icone {
+  border-radius: .75rem 0 0 .75rem;
+  padding: 1rem 2rem;
+  background-color: #f2f2f2;
+  height: inherit;
+}
+
+.champ > input {
+  border-style: unset;
+  border: solid #f2f2f2;
+  border-width: 1.5px 0;
+  color: black;
+  background-color: unset;
+  font: inherit;
+  padding: 0 1rem;
+  text-rendering: unset;
+}
+
+.champ > button {
+  border-radius: 0 .75rem .75rem 0;
+  background-color: #0065fc;
+  color: white;
+}
+
+.recherche .titre-wrapper {
+  justify-content: space-evenly;
+}
+
+.filtres-wrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.filtre-titre {
+  font-weight: 700;
+  padding-top: .5rem;
+}
+
+.filtres {
+  display: inline-flex;
+  flex: 8 1 0;
+}
+
+.filtre {
+  flex: initial;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+  transition-property: backfround-color color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.1s;
+}
+
+.filtre:hover {
+  background-color: #f2f2f2;
+  color: #0065fc;
+}
+
+.filtre-item {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 .5rem 0 2rem;
+}
+
+.champ-recherche-wrapper {
+  flex: 0 1 auto;
+  justify-content: space-evenly;
+}
+  
+
+.filtre-icone::before {
+  color: #0065fc;
+  width: 1.4rem;
+  padding: 0.7rem;
+  background-color: #deebff;
+  border-radius: 1.4rem;
+}
+
+.filtre {
+  border: 1.5px solid #f2f2f2;
+  border-radius: 1.4rem;
+  font-weight: bold;
+}
+
+.nombre-resultats {
+  display: inline-flex;
+  flex: 0 0 40%;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nombre-resultats-item {
+  padding-left: 2rem; /* Laisse la place à l'icone chargée ensuite */
+}
+
+/* Cercle autour du point d'exclamation */
+.nombre-resultats-icone::before {
+  width: 1rem;
+  border: .2rem solid #f2f2f2;
+  border-radius: 50%;
+  padding: .5rem;
+  color: #0065fc;
+}

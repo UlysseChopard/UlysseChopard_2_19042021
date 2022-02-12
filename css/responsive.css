@@ -1,0 +1,277 @@
+/* Bloque la largeur minimum à 280px */
+@media screen and (max-width: 280px) {
+  .flex-1 {
+    flex: 1 0 auto;
+  }
+
+  html,
+  body {
+    min-width: 280px;
+  }
+
+  .vignette-image {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  /* Inversion menu de navigation et inscription */
+  .inscription-wrapper {
+    order: -1;
+  }
+
+  .logo {
+    order: -1;
+  }
+  /* Barre sous le menu */
+  
+  .navigation-item {
+    border-bottom:2px solid #f2f2f2;
+    padding: 1rem;
+  }
+
+  .navigation-item:active {
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: #0065fc;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Flexbox */
+  .flex-1 {
+    flex: 1 0 0;
+  }
+
+  /* Page */
+  html,
+  body {
+    align-self: center;
+    align-items: center;
+  }
+
+  .header,
+  main,
+  .footer {
+    max-width: 100%;
+  }
+
+  .resultats {
+    flex-direction: column-reverse;
+  }
+
+  /* Header */
+  .header {
+    flex-flow: row wrap;
+    padding: 1rem 0;
+  }
+
+  /* Recherche */
+  .recherche-wrapper {
+    padding: 1rem;
+  }
+
+  .filtres-wrapper {
+    flex-flow: column wrap;
+  }
+
+  .filtre-titre {
+    padding: 1rem;
+  }
+
+  .filtres {
+    flex-wrap: wrap;
+  }
+
+  .champ > input {
+    width: 50%;
+  }
+
+  .bouton-recherche::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    content: "\f002";
+  }
+
+  /* Resultats */
+  .titre {
+    justify-content: space-between;
+  }
+  .promotions,
+  .hebergements {
+    margin: unset;
+    padding: unset;
+  }
+
+  /* Promotions */
+  .promotions .contenu {
+    flex: 1 0 0;
+  }
+
+  .promotions .vignette-image {
+    height: 130px;
+    min-height: 130px;
+  }
+
+  /* Hebergements */
+  .hebergements {
+    background-color: unset;
+    border-radius: unset;
+  }
+
+  .vignette-row {
+    flex-direction: column;
+  }
+
+  .vignette-row {
+    align-items: center;
+  }
+
+  .hebergements .vignette {
+    box-shadow: 0 0 10px 5px #f2f2f2;
+    margin: 1rem 0;
+    width: unset;
+  }
+
+  .hebergements .vignette-image {
+    height: 115px;
+    min-height: 115px;
+    max-width: 95%;
+    width: 320px;
+    min-width: 300px;
+  }
+
+  /* Activites */
+  .activites .contenu {
+    flex-direction: column;
+  }
+
+  .activites .vignette-image {
+    min-height: 130px;
+    height: 130px;
+  }
+
+  /* Footer */
+  .footer-nav {
+    flex-direction: column;
+  }
+}
+
+/* Bouton rechercher et lisere bleu du menu de navigation */
+@media screen and (min-width: 700px) {
+  .bouton-recherche::after {
+    content: "Rechercher";
+    color: white;
+    background-color: inherit;
+  }
+  .navigation-item:hover,
+  .navigation-item:focus {
+    border-top-color: #0065fc;
+    color: #0065fc;
+  }
+
+  .header {
+    padding: unset;
+  }
+}
+
+/* Tablettes */
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  /* Flexbox */
+  .flex-1 {
+    flex: 1 0 0;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  /* Hebergements et promotions en colonne */
+  .hebergements {
+    flex: 3;
+  }
+
+  .promotions {
+    flex: 2;
+  }
+
+  .promotions .contenu {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: unset;
+  }
+
+  .hebergements .contenu {
+    flex-direction: row;
+  }
+
+  .vignette-row {
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
+
+  .hebergements .vignette-image {
+    min-height: 100px;
+    height: 100px;
+    width: 150px;
+  }
+
+  .hebergements .vignette {
+    min-height: 90%;
+    height: 90%;
+  }
+
+  .promotions .vignette-image {
+    min-height: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .hebergements .vignette-image {
+    max-width: 170px;
+    min-width: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1920px) {
+  .hebergements .vignette-image {
+    min-height: 115px;
+    height: 115px;
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* Page */
+  body {
+    max-width: 1920px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hebergements .vignette-image {
+    min-height: 250px;
+    height: 250px;
+    width: 400px;
+  }
+
+  .promotions .vignette-image {
+    height: 200px;
+    min-height: 200px;
+  }
+}
+
+/* Gère le tactile */
+@media (hover: none) {
+  .filtre:focus,
+  .filtre:active {
+    background-color: #f2f2f2;
+    color: #0065fc;
+  }
+}

@@ -1,0 +1,85 @@
+.vignette-row {
+  justify-content: space-between;
+  padding: 0 0 1rem 0;
+}
+
+.vignette-row > a {
+  min-width: 33%;
+}
+
+.vignette {
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.75rem;
+  background-color: white;
+}
+
+.vignette-verticale .vignette-image {
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.hebergements .vignette-image {
+  min-height: 100px;
+  height: 100px;
+  width: 120px;
+}
+
+.hebergements .vignette-description {
+  flex: 1;
+}
+
+.hebergements .vignette {
+  height: 90%;
+  width: min-content;
+}
+
+.promotions .vignette-image {
+  border-radius: 0.75rem 0 0 0.75rem;
+  height: 145px;
+  min-width: 50%;
+  width: 50%;
+}
+
+.promotions .vignette-description {
+  padding: 0 0.25rem;
+  margin: 0 0.25rem;
+  justify-content: space-around;
+}
+
+.vignette-verticale .vignette-description {
+  padding: 0.25rem 0;
+  margin: 0.25rem 0;
+  justify-content: space-evenly;
+}
+
+.notation-icone {
+  color: #0065fc;
+}
+
+.notation-negatif {
+  color: #f2f2f2;
+}
+
+/* Pour titre vignettes */
+.vignette-description :not(p) {
+  font-weight: bold;
+}
+
+.activites .vignette {
+  height: 100%;
+  padding: unset;
+  box-shadow: 0 0 10px 5px #f2f2f2;
+}
+
+.activites .vignette-description {
+  padding: 0.5rem 1rem;
+}
+
+.activites .contenu a {
+  height: 100%;
+  margin: 0.5rem;
+}
+
+.activites .vignette-image {
+  min-height: 150px;
+}

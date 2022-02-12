@@ -1,0 +1,47 @@
+.hebergements,
+.promotions {
+  background-color: #f2f2f2;
+  border-radius: 0.75rem;
+}
+
+.hebergements,
+.promotions {
+  padding: 0.75rem;
+  margin: 0.75rem;
+}
+
+.activites {
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+.activites .contenu {
+  height: 100%;
+}
+
+.hebergements {
+  flex: 2;
+}
+
+.hebergements > .titre,
+.contenu > p,
+.activites > .titre,
+.promotions > .titre {
+  padding: 0.25rem 1rem;
+  margin: 0.25rem;
+}
+
+.contenu {
+  justify-content: space-between;
+}
+
+/* Afficher plus */
+.btn-affiche {
+  align-self: flex-start;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.titre {
+  justify-content: space-between;
+}
